@@ -8,30 +8,30 @@ import './Navigation.css';
 function Navigation({custumNavigationMovies, custumNavigationSavedMovies, customSubtitleAccount}) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
 
-  useEffect(() => {
-    const closeByEscape = (e) => {
-      if (e.key === 'Escape') {
-        setshowPopupMenu (false);
-      }
-    }
+  // useEffect(() => {
+  //   const closeByEscape = (e) => {
+  //     if (e.key === 'Escape') {
+  //       setshowPopupMenu (false);
+  //     }
+  //   }
 
-    document.addEventListener('keydown', closeByEscape)
-    return () => document.removeEventListener('keydown', closeByEscape)
-  }, [showPopupMenu])
+  //   document.addEventListener('keydown', closeByEscape)
+  //   return () => document.removeEventListener('keydown', closeByEscape)
+  // }, [showPopupMenu])
 
-  const handleOverlay = (e) => {
-    if (e.target === e.currentTarget) {
-      setshowPopupMenu (false);
-    }
-  }
+  // const handleOverlay = (e) => {
+  //   if (e.target === e.currentTarget) {
+  //     setshowPopupMenu (false);
+  //   }
+  // }
 
-  function handleClick () {
-    setshowPopupMenu (true);
-  };
+  // function handleClick () {
+  //   setshowPopupMenu (true);
+  // };
 
-  function handleClose () {
-    setshowPopupMenu (false);
-  };
+  // function handleClose () {
+  //   setshowPopupMenu (false);
+  // };
 
   return (
     <nav className='navigation'>
