@@ -3,6 +3,7 @@ import IconHamburger from '../IconHamburger/IconHamburger';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import Account from '../Account/Account';
 import { NavLink } from 'react-router-dom';
+import CustomLink from '../NavLink/CustomLink';
 import './Navigation.css';
 
 function Navigation({custumNavigationMovies, custumNavigationSavedMovies, customSubtitleAccount}) {
@@ -37,18 +38,27 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
     <nav className='navigation'>
       <ul className='navigation__header-links'>
         <li className='navigation__header-link'>
-          <NavLink to='/movies'
-            activeClassName="menu__link-active"
-            className={`
-              navigation__header-link-movies
-              opacity
-              ${custumNavigationMovies}
-            `}
-          >
-            Фильмы
-          </NavLink>
+          <CustomLink 
+            to = '/#'
+            // custumNavigationLink={test}
+            text='text'
+          />
         </li>
         <li className='navigation__header-link'>
+          <CustomLink 
+            to = '/#'
+            // custumNavigationLink={test}
+            text='text'
+          />
+        </li>
+        <li className='navigation__header-link'>
+          <CustomLink 
+            to = '/#'
+            // custumNavigationLink={test}
+            text='text'
+          />
+        </li>
+        {/* <li className='navigation__header-link'>
           <NavLink to='/saved-movies'
             activeClassName="menu__link-active"
             className={`
@@ -59,9 +69,9 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
           >
             Сохранённые фильмы
           </NavLink>
-        </li>
+        </li> */}
       </ul>
-      <NavLink to='/profile'
+      {/* <NavLink to='/profile'
         activeClassName="menu__link-active"
         className='navigation__account-container'>
         <Account
@@ -78,7 +88,7 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
             handleClose={handleClose}
             handleOverlay={handleOverlay}
            />
-      }
+      } */}
     </nav>
   );
 }

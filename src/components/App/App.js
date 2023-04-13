@@ -14,161 +14,165 @@ import {CurrentUserContext} from '../../contexts/CurrentUserContext'
 import './App.css'
 
 function App () {
-  const history = useHistory();
-  const [loggedIn, setLoggedIn] = useState(false);
-  const [currentUser, setCurrentUser] = useState({ name: '', email: ''});
-  const [message, setMessage] = useState('');
+  // const history = useHistory();
+  // const [loggedIn, setLoggedIn] = useState(false);
+  // const [currentUser, setCurrentUser] = useState({ name: '', email: ''});
+  // const [message, setMessage] = useState('');
 
-  useEffect(() => {
-    tokenCheck()
-  }, [loggedIn]);
+  // useEffect(() => {
+  //   tokenCheck()
+  // }, [loggedIn]);
 
-  function handleRegister(name, email, password, formReset) {
-    let messageText = '';
+  // function handleRegister(name, email, password, formReset) {
+  //   let messageText = '';
 
-    auth.register(name, email, password)
-    .then(() => {
-      formReset();
-      auth.authorize(email, password)
-        .then((data) => {
-          if (!data) return;
+  //   auth.register(name, email, password)
+  //   .then(() => {
+  //     formReset();
+  //     auth.authorize(email, password)
+  //       .then((data) => {
+  //         if (!data) return;
 
-          localStorage.setItem('jwt', data.token);
-          formReset();
-          history.push('/movies');
-          setLoggedIn(true)
-        })
-        .catch(() => {
-          setMessage(BAD_REQUEST);
-        })
-    })
-    .catch((err) => {
-      switch (err) {
-        case 400:
-          messageText = BAD_REQUEST;
-          break;
-        case 409:
-          messageText = `Пользователь ${email} уже существует`;
-          break;
-        default:
-          messageText = DEFAULT_ERROR;
-      }
-    })
-    .finally(() => setMessage(messageText))
-  }
+  //         localStorage.setItem('jwt', data.token);
+  //         formReset();
+  //         history.push('/movies');
+  //         setLoggedIn(true)
+  //       })
+  //       .catch(() => {
+  //         setMessage(BAD_REQUEST);
+  //       })
+  //   })
+  //   .catch((err) => {
+  //     switch (err) {
+  //       case 400:
+  //         messageText = BAD_REQUEST;
+  //         break;
+  //       case 409:
+  //         messageText = `Пользователь ${email} уже существует`;
+  //         break;
+  //       default:
+  //         messageText = DEFAULT_ERROR;
+  //     }
+  //   })
+  //   .finally(() => setMessage(messageText))
+  // }
 
-  function handleLogin (email, password, formReset) {
-    let messageText = '';
+  // function handleLogin (email, password, formReset) {
+  //   let messageText = '';
 
-    auth.authorize(email, password)
-      .then((data) => {
-        if (!data) return;
+  //   auth.authorize(email, password)
+  //     .then((data) => {
+  //       if (!data) return;
 
-        localStorage.setItem('jwt', data.token);
-        formReset();
-        history.push('/movies');
-        setLoggedIn(true)
-      })
-      .catch((err) => {
-        switch (err) {
-          case 400:
-            messageText = BAD_REQUEST;
-            break;
-          case 401:
-            messageText = `Пользователь ${email} не авторизован!`;
-            break;
-          default:
-            messageText = DEFAULT_ERROR;
-        }
-      })
-      .finally(() => setMessage(messageText))
-  }
+  //       localStorage.setItem('jwt', data.token);
+  //       formReset();
+  //       history.push('/movies');
+  //       setLoggedIn(true)
+  //     })
+  //     .catch((err) => {
+  //       switch (err) {
+  //         case 400:
+  //           messageText = BAD_REQUEST;
+  //           break;
+  //         case 401:
+  //           messageText = `Пользователь ${email} не авторизован!`;
+  //           break;
+  //         default:
+  //           messageText = DEFAULT_ERROR;
+  //       }
+  //     })
+  //     .finally(() => setMessage(messageText))
+  // }
 
-  function tokenCheck () {
-    if (!localStorage.getItem('jwt')) return;
+  // function tokenCheck () {
+  //   if (!localStorage.getItem('jwt')) return;
 
-    const jwt = localStorage.getItem('jwt');
+  //   const jwt = localStorage.getItem('jwt');
 
-    auth.getContent(jwt).then((res) => {
-      if (!res) return;
+  //   auth.getContent(jwt).then((res) => {
+  //     if (!res) return;
 
-      setCurrentUser({
-        name: res.data.name,
-        email: res.data.email,
-      });
-      setLoggedIn(true);
-      history.push('/movies');
-    })
-    .catch(err => {
-      console.log(err);
-      setLoggedIn(false);
-      localStorage.removeItem('jwt');
-    });
-  }
+  //     setCurrentUser({
+  //       name: res.data.name,
+  //       email: res.data.email,
+  //     });
+  //     setLoggedIn(true);
+  //     history.push('/movies');
+  //   })
+  //   .catch(err => {
+  //     console.log(err);
+  //     setLoggedIn(false);
+  //     localStorage.removeItem('jwt');
+  //   });
+  // }
 
-  function handleLogout () {
-    localStorage.removeItem('foundMovies');
-    localStorage.removeItem('jwt');
-    setLoggedIn(false);
-    setCurrentUser({ name: '', email: '' });
-    history.push('/');
-  }
+  // function handleLogout () {
+  //   localStorage.removeItem('foundMovies');
+  //   localStorage.removeItem('jwt');
+  //   setLoggedIn(false);
+  //   setCurrentUser({ name: '', email: '' });
+  //   history.push('/');
+  // }
 
-  function resetMessage () {
-    setMessage('');
-  }
+  // function resetMessage () {
+  //   setMessage('');
+  // }
 
   return (
-    <CurrentUserContext.Provider value={currentUser}>
-      <div className="app">
-        <Switch>
-          <ProtectedRoute path="/movies" loggedIn={loggedIn}>
-            <Movies
-              loggedIn={loggedIn}
-            />
-          </ProtectedRoute>
 
-          <ProtectedRoute path="/saved-movies" loggedIn={loggedIn}>
-            <SavedMovies
-              loggedIn={loggedIn}
-            />
-          </ProtectedRoute>
+    <div>
+      <Main />
+    </div>
+    // <CurrentUserContext.Provider value={currentUser}>
+    //   <div className="app">
+    //     <Switch>
+    //       <ProtectedRoute path="/movies" loggedIn={loggedIn}>
+    //         <Movies
+    //           loggedIn={loggedIn}
+    //         />
+    //       </ProtectedRoute>
 
-          <ProtectedRoute path="/profile" loggedIn={loggedIn}>
-            <Profile
-              handleLogout={handleLogout}
-            />
-          </ProtectedRoute>
+    //       <ProtectedRoute path="/saved-movies" loggedIn={loggedIn}>
+    //         <SavedMovies
+    //           loggedIn={loggedIn}
+    //         />
+    //       </ProtectedRoute>
 
-          <Route path="/signup">
-            <Register
-              handleRegister={handleRegister}
-              message={message}
-              resetMessage={resetMessage}
-            />
-          </Route>
+    //       <ProtectedRoute path="/profile" loggedIn={loggedIn}>
+    //         <Profile
+    //           handleLogout={handleLogout}
+    //         />
+    //       </ProtectedRoute>
 
-          <Route path="/signin">
-            <Login
-              handleLogin={handleLogin}
-              message={message}
-              resetMessage={resetMessage}
-              history={history}
-            />
-          </Route>
+    //       <Route path="/signup">
+    //         <Register
+    //           handleRegister={handleRegister}
+    //           message={message}
+    //           resetMessage={resetMessage}
+    //         />
+    //       </Route>
 
-          <Route exact path="/"> {/*exact ===  полный url */}
-            <Main
-              loggedIn={loggedIn}
-            />
-          </Route>
+    //       <Route path="/signin">
+    //         <Login
+    //           handleLogin={handleLogin}
+    //           message={message}
+    //           resetMessage={resetMessage}
+    //           history={history}
+    //         />
+    //       </Route>
 
-          <Route path="*">
-            <PageNotFound />
-          </Route>
-        </Switch>
-      </div>
-    </CurrentUserContext.Provider>
+    //       <Route exact path="/"> {/*exact ===  полный url */}
+    //         <Main
+    //           loggedIn={loggedIn}
+    //         />
+    //       </Route>
+
+    //       <Route path="*">
+    //         <PageNotFound />
+    //       </Route>
+    //     </Switch>
+    //   </div>
+    // </CurrentUserContext.Provider>
   )
 };
 
