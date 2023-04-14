@@ -26,7 +26,7 @@
   padding: 0;
 }
 
-.navigation__header-links {
+.navigation__links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -35,16 +35,27 @@
   padding: 0;
 }
 
-.navigation__header-link {
+.navigation__link {
   list-style-type: none;
   margin-right: 20px;
 }
 
-.navigation__header-link:last-child {
+.navigation__content {
+  display: block;
+  text-decoration: none;
+  position: relative;
+  transition: 0.3s;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Inter', 'Arial', sans-serif;
+  color: white;
+}
+
+.navigation__link:last-child {
   margin-right: 0;
 }
 
-.navigation__header-link-movies {
+.navigation__link-movies {
   text-decoration: none;
   font-weight: 400;
   font-size: 13px;
@@ -52,7 +63,7 @@
   color: #000;
 }
 
-.navigation__header-link-saved-movies {
+.navigation__link-saved-movies {
   text-decoration: none;
   font-weight: 500;
   font-size: 13px;

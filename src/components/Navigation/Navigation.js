@@ -36,26 +36,47 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
 
   return (
     <nav className='navigation'>
-      <ul className='navigation__header-links'>
-        <li className='navigation__header-link'>
+      <ul className='navigation__links'>
+        <li className='navigation__link'>
           <CustomLink 
             to = '/#'
-            // custumNavigationLink={test}
-            text='text'
+            custumNavigationLink='navigation__content'
+            text='Главная'
           />
         </li>
-        <li className='navigation__header-link'>
+        <li className='navigation__link'>
           <CustomLink 
             to = '/#'
-            // custumNavigationLink={test}
-            text='text'
+            custumNavigationLink='navigation__content'
+            text='О нас'
           />
         </li>
-        <li className='navigation__header-link'>
+        <li className='navigation__link'>
           <CustomLink 
             to = '/#'
-            // custumNavigationLink={test}
-            text='text'
+            custumNavigationLink='navigation__content'
+            text='Аренда'
+          />
+        </li>
+        <li className='navigation__link'>
+          <CustomLink 
+            to = '/#'
+            custumNavigationLink='navigation__content'
+            text='Ремонт'
+          />
+        </li>
+        <li className='navigation__link'>
+          <CustomLink 
+            to = '/#'
+            custumNavigationLink='navigation__content'
+            text='Галерея'
+          />
+        </li>
+        <li className='navigation__link'>
+          <CustomLink 
+            to = '/#'
+            custumNavigationLink='navigation__content'
+            text='Контакты'
           />
         </li>
         {/* <li className='navigation__header-link'>
