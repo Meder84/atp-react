@@ -1,7 +1,9 @@
 .hero {
   position: relative;
-  /* background-image: url('../../images/background-image-blue.jpg'); */
-  background-image: url('../../images/background\ image');
+  background-image: url('../../images/background-image1.jpg');
+  /* background-image: url('../../images/background-image2.jpg'); */
+  /* background-image: url('../../images/background-image3.jpg'); */
+  /* background-image: url('../../images/background\ image'); */
   box-sizing: border-box;
   background-position: center;
   background-size: cover;
@@ -10,7 +12,7 @@
   height: 738px;
 }
 
-.hero::before {
+/* .hero::before {
   content: "";
   background: rgba(56, 64, 70, 0.7);
   position: absolute;
@@ -18,4 +20,4 @@
   top: 0;
   left: 0;
   right: 0;
-}
+} */

@@ -7,19 +7,18 @@
   align-items: center;
   box-sizing: border-box;
   max-width: 1280px;
-  margin: 0 auto 0 -25%;
+  margin: 0;
   width: 100%;
   height: 74px;
-  padding: 0 70px;
+  padding: 0 40px;
   position: fixed;
   top: 0;
-  left: 50%;
   z-index: 1;
 }
 
 .header__logo {
   display: block;
-  background-image: url('../../images/logo.png');
+  background-image: url("../../images/logo.png");
   text-decoration: none;
   box-sizing: border-box;
   width: 38px;
@@ -31,12 +30,14 @@
   margin: 0;
 }
 
-/* .header__links {
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-left: 44px;
-} */
+.header__links {
+}
+
+@media screen and (max-width: 1024px) {
+  .header {
+    padding: 0 30px;
+  }
+}
 /* 
 @media screen and (max-width: 768px) {
   .header {

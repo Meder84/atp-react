@@ -6,6 +6,7 @@ function CustomLink ({to, custumNavigationLink, text}) {
   return (
     <NavLink to={to}
       className={`
+        background-hover
         customLink
         opacity
         ${custumNavigationLink}

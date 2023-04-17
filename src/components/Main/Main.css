@@ -1,7 +1,10 @@
 .main {
-  display: block;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   margin: 0;
   padding: 0;
   transition: 0.4s ease-in-out;
+  position: relative;
+  justify-content: center;
 }

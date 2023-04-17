@@ -120,7 +120,7 @@ function App () {
 
   return (
 
-    <div>
+    <div className='app'>
       <Main />
     </div>
     // <CurrentUserContext.Provider value={currentUser}>
