@@ -4,10 +4,11 @@ import React from "react";
 // import Techs from '../Techs/Techs';
 // import AboutMe from '../AboutMe/AboutMe';
 // import Portfolio from '../Portfolio/Portfolio';
-import './Main.css';
 // import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
+import ShowCase from "../ShowCase/ShowCase";
+import './Main.css';
 
 function Main({loggedIn}) {
 
@@ -15,6 +16,7 @@ function Main({loggedIn}) {
     <main className="main">
       <Header />
       <Hero />
+      <ShowCase />
       {/* <Promo
         loggedIn={loggedIn}
       />
