@@ -18,6 +18,13 @@
   box-sizing: border-box;
 }
 
+.about__image-container {
+  display: flex;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+}
+
 .about__image {
   box-sizing: border-box;
   background-position: center;

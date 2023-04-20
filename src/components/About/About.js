@@ -15,7 +15,9 @@ function About() {
   return(
     <section className="about">
       <main className="about__wrapper">
-        <img src={imageAbout} alt="человек в офисе" className="about__image"></img>
+        <div className="about__image-container">
+          <img src={imageAbout} alt="человек в офисе" className="about__image imageScale"></img>
+        </div>
         <div className="about__description">
           <h3 className="about__title">О нас</h3>
           <p className="about__text">
