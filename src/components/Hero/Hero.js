@@ -9,7 +9,7 @@ function Hero () {
         <div className="hero__description">
           <h1 className="hero__title">Государственное учреждение</h1>
           <h2 className="hero__subtitle">
-            "Автотранспортное предприятие" 
+            "Автотранспортное предприятие"
           </h2>
           <h2 className="hero__subtitle">
             при Управлении делами Президента Кыргызской Республики
@@ -19,7 +19,7 @@ function Hero () {
               Подробнее {'>>>'}
             </Link>
             <Link className='hero__link opacity'>
-              Подробнее {'>>>'}
+              Подробнее {'>>'}
             </Link>
           </div>
         </div>
