@@ -19,7 +19,7 @@ function Hero () {
               Подробнее {'>>>'}
             </Link>
             <Link className='hero__link opacity'>
-              Подробнее {'>>'}
+              Подробнее {'>>>'}
             </Link>
           </div>
         </div>
