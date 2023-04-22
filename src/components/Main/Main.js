@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Hero from "../Hero/Hero";
 import ShowCase from "../ShowCase/ShowCase";
 import About from "../About/About";
+import Counts from "../Counts/Counts";
 import './Main.css';
 
 function Main({loggedIn}) {
@@ -13,6 +14,7 @@ function Main({loggedIn}) {
       <Hero />
       <ShowCase />
       <About />
+      <Counts />
       {/* <Promo
         loggedIn={loggedIn}
       />
