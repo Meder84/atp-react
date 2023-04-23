@@ -4,6 +4,7 @@ import Hero from "../Hero/Hero";
 import ShowCase from "../ShowCase/ShowCase";
 import About from "../About/About";
 import Counts from "../Counts/Counts";
+import Services from "../Services/Services";
 import './Main.css';
 
 function Main({loggedIn}) {
@@ -15,6 +16,7 @@ function Main({loggedIn}) {
       <ShowCase />
       <About />
       <Counts />
+      <Services />
       {/* <Promo
         loggedIn={loggedIn}
       />

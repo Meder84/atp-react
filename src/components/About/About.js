@@ -25,32 +25,32 @@ function About() {
             Автотранспортное обеспечение:
           </p>
           <ul className="about__list">
-            <li class="about__item"> 
-              <img src={doubleCheck} className="about__double-check" />
+            <li class="about__item">
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Президента Кыргызской Республики
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Председателя Кабинета Министров
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Заместителей кабинета министров
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Администрация Президента КР
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Управления Делами Президента
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Министерств и ведомств КР
             </li>
             <li class="about__item">
-              <img src={doubleCheck} className="about__double-check" />
+              <img src={doubleCheck} alt="галочка" className="about__double-check" />
               Клинической больницы УДПКР
             </li>
           </ul>

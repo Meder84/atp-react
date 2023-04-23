@@ -1,5 +1,5 @@
 import React from "react";
-import iconHamburger from '../../images/iconHamburger.svg';
+import iconHamburger from '../../images/icons/iconHamburger.svg';
 import './IconHamburger.css';
 
 function IconHamburger(props) {
