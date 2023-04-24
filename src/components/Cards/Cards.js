@@ -1,43 +1,34 @@
 import React, {useState} from "react";
-import test from '../../images/garage/bmw.jpg'
+// import test from '../../images/garage/bmw.jpg'
 // import { cards } from "../../utils/consts";
 // import { CurrentUserContext } from "../contexts/CurrentUserContext";
+// const cards = 'https://api.nomoreparties.co/beatfilm-movies';
 const cards = [
   {
     id:1,
-    name: 'Автобусы',
+    title: 'Автобусы',
     url: '../../images/garage/bmw.jpg'
   }
 ]
 
-function Card(props) {
-  // const [state, setState] = useState(cards)
-
+function Card() {
   return(
-    <section className="card">
-      {cards.map(el => 
-        <div key={el.id}>
-          <h3>{el.name}</h3>
-          <img key={el.id} src={el.url} />
-        </div>
-      )}
-    </section>
-  )
+     <section>
+       <ul>
+         {
+           cards.map(car => (
+             <li key={car.id}>
+              <img src={require(`${car.url}.jpg`)} alt={car.title}/>
+             </li>
+           ))
+         }
+       </ul>
+     </section>
+    )
 }
+  // как Картинки добавить локально с компьютера через map react
 
-// import React, {useState} from "react";
-// import {pizza_description} from "../Food_description/Pizza/Pizza";
- 
-// export let Pizza_page = () => {
- 
-//     let [pizza, different_pizza] = useState(pizza_description)
- 
- 
-//     return (<div>
-//         {pizza.map(el => <div key={el.id}>
-//             {el.title} {el.description} {el.price}
-//             <img key={el.id} src={el.image}/>
-//         </div>)}
-//             </div>)
-// }
+
+
+
 export default Card;

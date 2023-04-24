@@ -43,6 +43,6 @@ export const cards = [
   {
     id:1,
     name: 'Автобусы',
-    link: '../images/garage/bmw.jpg'
+    url: '../images/garage/bmw.jpg'
   }
 ]
