@@ -1,3 +1,4 @@
+
 const DESKTOP_WIDTH = 1280;
 const TABLET_WIDTH = 768;
 const MOBILE_WIDTH = 480;
@@ -35,3 +36,13 @@ export {
   BAD_REQUEST,
   DEFAULT_ERROR,
 }
+
+// import bmw from '../images/garage/bmw.jpg';
+// import bmw from '../images/garage/bmw.jpg'
+export const cards = [
+  {
+    id:1,
+    name: 'Автобусы',
+    link: '../images/garage/bmw.jpg'
+  }
+]
