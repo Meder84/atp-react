@@ -6,8 +6,9 @@ import About from "../About/About";
 import Counts from "../Counts/Counts";
 import Services from "../Services/Services";
 import Gallery from "../Gallery/Gallery";
-import './Main.css';
 import Card from "../Cards/Cards";
+import Carusel from '../Carousel/Carousel';
+import './Main.css';
 
 function Main({loggedIn}) {
 
@@ -19,8 +20,8 @@ function Main({loggedIn}) {
       <About />
       <Counts />
       <Services />
-      {/* <Gallery /> */}
-      <Card />
+      <Gallery />
+      <Carusel />
       {/* <Promo
         loggedIn={loggedIn}
       />

@@ -2,8 +2,12 @@
 @import url(./vendor/fonts/font.css);
 @import url(./utils/global.css);
 
-@import url(./blocks/hide-part-text/hide-part-text.css);
-@import url(./blocks/menu/__link-active/menu__link-active.css);
-@import url(./blocks/opacity/opacity.css);
-@import url(./blocks/background-hover/background-hover.css);
-@import url(./blocks/image-scale/imageScale.css);
+@import url(./blocks/hide-part-text.css);
+/* @import url(./blocks/menu__link-active.css); */
+@import url(./blocks/opacity.css);
+@import url(./blocks/background-hover.css);
+@import url(./blocks/imageScale.css);
+@import url(./blocks/general-title.css);
+@import url(./blocks/title.css);
+@import url(./blocks/subtitle.css);
+@import url(./blocks/wrapper.css);

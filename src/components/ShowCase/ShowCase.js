@@ -6,8 +6,8 @@ function ShowCase() {
 
   return(
     <section className="showCase">
-      <main className="showCase__wrapper">
-        <h2 className="showCase__title">Чем мы занимаемся?</h2>
+      <main className="showCase__wrapper wrapper">
+        <h2 className="showCase__title title general-title">Чем мы занимаемся?</h2>
         <div className="showCase__items">
           <Link to="/" className="showCase__item">
             <div className="showCase__description">

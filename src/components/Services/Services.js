@@ -12,9 +12,9 @@ import './Services.css';
 function Services() {
   return(
     <section className="services">
-      <main className="services__wrapper">
-        <h2 className="services__title">Наши услуги</h2>
-        <h4 className="services__subtitle">Наша компания предоставляет различные виды автотранспортных услуг</h4>
+      <main className="services__wrapper wrapper">
+        <h2 className="services__title title general-title">Наши услуги</h2>
+        <h4 className="services__subtitle subtitle">Наша компания предоставляет различные виды автотранспортных услуг</h4>
         <div className="services__list">
           <Link className="services__item">
             <img src={iconBus} alt="" className="services__icon"></img>

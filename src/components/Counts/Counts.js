@@ -11,7 +11,7 @@ function Counts() {
 
   return (
     <section className="counts">
-      <main className="counts__wrapper">
+      <main className="counts__wrapper wrapper">
         <ul className="counts__list">
           <li className="counts__item">
             <img src={smile} alt="смайлик" className="counts__icon" />

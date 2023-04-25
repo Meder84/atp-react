@@ -8,31 +8,14 @@
 }
 
 .services__wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  max-width: 1280px;
-  width: 100%;
-  color: #000;
-  padding: 60px 40px;
-  box-sizing: border-box;
+  color: #384046;
 }
 
 .services__title {
-  font-size: 32px;
-  font-weight: 500;
-  margin: 0;
-  padding-bottom: 20px;
-  position: relative;
 }
 
 .services__subtitle {
   color: #384046;
-  transition: 0.3s;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2;
-  margin: 0;
 }
 
 .services__list {
@@ -75,7 +58,7 @@
   line-height: 1.2;
   font-weight: 500;
   margin: 0;
-  color: #000;
+  color: #384046;
 }
 
 .services__description-text {

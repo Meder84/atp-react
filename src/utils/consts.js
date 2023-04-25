@@ -36,13 +36,3 @@ export {
   BAD_REQUEST,
   DEFAULT_ERROR,
 }
-
-// import bmw from '../images/garage/bmw.jpg';
-// import bmw from '../images/garage/bmw.jpg'
-export const cards = [
-  {
-    id:1,
-    name: 'Автобусы',
-    url: '../images/garage/bmw.jpg'
-  }
-]
