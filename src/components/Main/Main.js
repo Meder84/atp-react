@@ -7,7 +7,8 @@ import Counts from "../Counts/Counts";
 import Services from "../Services/Services";
 import Gallery from "../Gallery/Gallery";
 import Card from "../Cards/Cards";
-import Carusel from '../Carousel/Carousel';
+import Carousel from '../Carousel/Carousel';
+import Team from "../Team/Team";
 import './Main.css';
 
 function Main({loggedIn}) {
@@ -21,7 +22,8 @@ function Main({loggedIn}) {
       <Counts />
       <Services />
       <Gallery />
-      <Carusel />
+      <Carousel />
+      <Team />
       {/* <Promo
         loggedIn={loggedIn}
       />
