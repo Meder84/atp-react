@@ -45,6 +45,7 @@
   background-position: center;
   background-size: cover;
   width: 50%;
+  border-radius: 50%;
 }
 
 .team__figcaption {
@@ -53,7 +54,6 @@
   align-items: center;
   justify-content: start;
   width: 100%;
-  height: 100%;
   box-sizing: border-box;
 }
 
@@ -62,14 +62,48 @@
 }
 
 .team__text {
-
+  margin: 15px 0;
 }
 
 .team__social {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .team__social-link {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  height: 100%;
+  margin-right: 15px;
+}
 
+.team__social-link:last-of-type {
+  margin-right: 0;
+}
+
+.team__social-icon {
+  box-sizing: border-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.facebook {
+  background-image: url('../../images/inconSocial/iconFacebook.svg');
+}
+/* .Gmail {
+  background-image: url('../../images/inconSocial/iconGmail.svg');
+} */
+.instagram {
+  background-image: url('../../images/inconSocial/iconInstagram.svg');
+}
+.twitter {
+  background-image: url('../../images/inconSocial/iconTwitter.svg');
+}
+.tiktok {
+  background-image: url('../../images/inconSocial/iconTikTok.svg');
 }
