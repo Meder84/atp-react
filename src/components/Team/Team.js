@@ -31,7 +31,7 @@ function Team () {
                 <a href='#' className='team__social-link'>
                   <div className='team__social-icon twitter'></div>
                 </a>
-              </div>
+              </div> 
             </figure>
           </li>
           <li className='team__list-item'>

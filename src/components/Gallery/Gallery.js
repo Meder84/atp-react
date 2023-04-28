@@ -15,6 +15,7 @@ import cadilac2 from '../../images/garage/cadilac2.jpg';
 import bus from '../../images/garage/bus.jpg';
 import backTheBuses from '../../images/garage/backTheBuses.jpg';
 import buses from '../../images/garage/buses.jpg';
+import track from '../../images/hard1.png';
 import miniBuses2 from '../../images/garage/miniBuses.jpg';
 
 
@@ -45,9 +46,9 @@ function Gallery() {
             title='Марка BMW'
           />
           <ItemGallery 
-            image={bmw4}
-            alt='Марка BMW'
-            title='Марка BMW'
+            image={track}
+            alt='Марка SCANIA'
+            title='Марка SCANIA'
           />
           <ItemGallery 
             image={mercedes}

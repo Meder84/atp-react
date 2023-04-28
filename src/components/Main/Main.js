@@ -9,7 +9,9 @@ import Gallery from "../Gallery/Gallery";
 import Card from "../Cards/Cards";
 import Carousel from '../Carousel/Carousel';
 import Team from "../Team/Team";
+import Footer from "../Footer/Footer";
 import './Main.css';
+import FooterCopyright from "../FooterCopyright/FooterCoptright";
 
 function Main({loggedIn}) {
 
@@ -24,6 +26,8 @@ function Main({loggedIn}) {
       <Gallery />
       <Carousel />
       <Team />
+      <Footer />
+      <FooterCopyright />
       {/* <Promo
         loggedIn={loggedIn}
       />
