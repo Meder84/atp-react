@@ -12,17 +12,19 @@ import mondeo from '../../images/garage/mondeo.jpg';
 import mondeo2 from '../../images/garage/mondeo2.jpg';
 import cadilac from '../../images/garage/cadilac.jpg';
 import cadilac2 from '../../images/garage/cadilac2.jpg';
-import bus from '../../images/garage/bus.jpg';
+import bus1 from '../../images/garage/bus.jpg';
 import backTheBuses from '../../images/garage/backTheBuses.jpg';
 import buses from '../../images/garage/buses.jpg';
 import track from '../../images/hard1.png';
 import miniBuses2 from '../../images/garage/miniBuses.jpg';
-
-
-import './Gallery.css';
 import ItemGallery from '../ItemGallery/ItemGallery';
+import './Gallery.css';
 
 function Gallery() {
+  const cars = 'легковой автомобиль'
+  const bus = 'Автобус'
+  const miniBuse = 'Микроавтобусы'
+  const parket = 'Внедорожник'
 
   return(
     <section className="gallery">
@@ -33,77 +35,77 @@ function Gallery() {
           <ItemGallery 
             image={bmw}
             alt='Марка BMW'
-            title='Марка BMW'
+            title={cars}
           />
           <ItemGallery 
             image={bmw2}
             alt='Марка BMW'
-            title='Марка BMW'
+            title={cars}
           />
           <ItemGallery 
             image={bmw3}
             alt='Марка BMW'
-            title='Марка BMW'
+            title={cars}
           />
           <ItemGallery 
-            image={track}
-            alt='Марка SCANIA'
-            title='Марка SCANIA'
+            image={bmw4}
+            alt='Марка bmw'
+            title={cars}
           />
           <ItemGallery 
             image={mercedes}
             alt='Марка MERCEDES-BENZ'
-            title='Марка MERCEDES-BENZ'
+            title={cars}
           />
           <ItemGallery 
             image={miniBuses}
             alt='Микроавтобусы'
-            title='Микроавтобусы'
+            title={miniBuse}
           />
           <ItemGallery 
             image={insideTheBus}
             alt='Атобусы'
-            title='Атобусы'
+            title={bus}
           />
           <ItemGallery 
             image={mondeo}
             alt='Марка FORD'
-            title='Марка FORD'
+            title={cars}
           />
           <ItemGallery 
             image={mondeo2}
             alt='Марка FORD'
-            title='Марка FORD'
+            title={cars}
           />
           <ItemGallery 
             image={cadilac}
             alt='Марка CADILLAC'
-            title='Марка CADILLAC'
+            title={cars}
           />
           <ItemGallery 
             image={cadilac2}
             alt='Марка CADILLAC'
-            title='Марка CADILLAC'
+            title={cars}
           />
           <ItemGallery 
-            image={bus}
+            image={bus1}
             alt='Автобус'
-            title='Автобус'
+            title={bus}
           />
           <ItemGallery 
             image={backTheBuses}
             alt='Автобус'
-            title='Автобус'
+            title={bus}
           />
           <ItemGallery 
             image={buses}
             alt='Микроавтобусы'
-            title='Микроавтобусы'
+            title={miniBuse}
           />
           <ItemGallery 
             image={miniBuses}
             alt='Атобусы'
-            title='Атобусы'
+            title={bus}
           />
         </ul>
       </main>
