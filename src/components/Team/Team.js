@@ -19,16 +19,16 @@ function Team () {
                 <p className='team__text text'>+996 550 057 575</p>
               </figcaption>
               <div className='team__social'>
-                <a href='#' className='team__social-link'>
+                <a href='https://www.instagram.com/gos.garaj/' className='team__social-link'>
                   <div className='team__social-icon facebook'></div>
                 </a>
-                <a href='#' className='team__social-link'>
+                <a href='https://www.instagram.com/gos.garaj/' className='team__social-link'>
                   <div className='team__social-icon tiktok'></div>
                 </a>
                 <a href='https://www.instagram.com/gos.garaj/' className='team__social-link'>
                   <div className='team__social-icon instagram'></div>
                 </a>
-                <a href='#' className='team__social-link'>
+                <a href='https://www.instagram.com/gos.garaj/' className='team__social-link'>
                   <div className='team__social-icon twitter'></div>
                 </a>
               </div> 

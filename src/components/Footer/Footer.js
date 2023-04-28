@@ -36,10 +36,10 @@ function Footer() {
               Бишкек, <br /> улица Михаила Фрунзе, д. 421,
             </p>
             <div className="footer__social-links">
-              <a className="footer__social-link">
+              <a className="footer__social-link" href="https://www.instagram.com/gos.garaj/">
                 <div className="footer__social-icon facebook"></div>
               </a>
-              <a className="footer__social-link">
+              <a className="footer__social-link" href="https://www.instagram.com/gos.garaj/">
                 <div className="footer__social-icon instagram"></div>
               </a>
             </div>
