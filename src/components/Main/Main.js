@@ -7,14 +7,14 @@ import Counts from "../Counts/Counts";
 import Services from "../Services/Services";
 import Gallery from "../Gallery/Gallery";
 import Card from "../Cards/Cards";
-import Carousel from '../Carousel/Carousel';
+import Carousel from "../Carousel/Carousel";
 import Team from "../Team/Team";
 import Footer from "../Footer/Footer";
-import './Main.css';
+import "./Main.css";
 import FooterCopyright from "../FooterCopyright/FooterCoptright";
+import { Route } from "react-router-dom/cjs/react-router-dom.min";
 
-function Main({loggedIn}) {
-
+function Main({ loggedIn }) {
   return (
     <main className="main">
       <Header />
@@ -23,7 +23,9 @@ function Main({loggedIn}) {
       <About />
       <Counts />
       <Services />
-      <Gallery />
+      <Route path='/gallery'>
+        <Gallery />
+      </Route>
       <Carousel />
       <Team />
       <Footer />
@@ -37,7 +39,7 @@ function Main({loggedIn}) {
       <Portfolio />
       <Footer /> */}
     </main>
-  )
+  );
 }
 
 export default Main;

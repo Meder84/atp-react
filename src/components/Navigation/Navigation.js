@@ -67,7 +67,7 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
         </li>
         <li className='navigation__link'>
           <CustomLink 
-            to = '/#'
+            to = '/gallery'
             custumNavigationLink='navigation__content'
             text='Галерея'
           />
