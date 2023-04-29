@@ -3,8 +3,9 @@ import IconHamburger from '../IconHamburger/IconHamburger';
 import PopupMenu from '../PopupMenu/PopupMenu';
 import Account from '../Account/Account';
 import { NavLink } from 'react-router-dom';
-import CustomLink from '../NavLink/CustomLink';
+import CustomLink from '../CustomLink/CustomLink';
 import './Navigation.css';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 function Navigation({custumNavigationMovies, custumNavigationSavedMovies, customSubtitleAccount}) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
@@ -39,14 +40,14 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
       <ul className='navigation__links'>
         <li className='navigation__link'>
           <CustomLink 
-            to = '/#'
+            to = '/'
             custumNavigationLink='navigation__content'
             text='Главная'
           />
         </li>
         <li className='navigation__link'>
           <CustomLink 
-            to = '/#'
+            to = '/about'
             custumNavigationLink='navigation__content'
             text='О нас'
           />

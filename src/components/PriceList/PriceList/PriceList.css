@@ -1,0 +1,49 @@
+.price-list {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+
+.price-list__wrapper {
+}
+
+.price-list__title {
+  color: #20a098;
+}
+
+.price-list__subTitle {
+}
+
+.price-list__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(300px, max-content);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  position: relative;
+  margin: 40px 0 0;
+}
+
+.price-list__items::before {
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.price-list-item__lease {
+  background-image: url('../../../images/lease-background.jpg');
+}
+
+.price-list-item__repair {
+  background-image: url('../../../images/repair-background.jpg');
+}
+
+.price-list-item__transport-support {
+  background-image: url('../../../images/cars.jpg');
+}

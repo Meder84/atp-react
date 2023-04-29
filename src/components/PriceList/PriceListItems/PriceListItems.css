@@ -1,42 +1,4 @@
-.showCase {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  position: relative;
-}
-
-.showCase__wrapper {
-}
-
-.showCase__title {
-  color: #20a098;
-}
-
-.showCase__subTitle {
-}
-
-.showCase__items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(300px, max-content);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  position: relative;
-  margin: 40px 0 0;
-}
-
-.showCase__items::before {
-  content: "";
-  background: rgba(0, 0, 0, 0.7);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.showCase__item {
+.price-list-item {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -48,13 +10,13 @@
   /* z-index: 1; */
 }
 
-.showCase__item:hover {
+.price-list-item:hover {
   color: #20a098;
   transition: 0.4s linear;
 }
 
-.showCase__item:hover .showCase__child,
-.showCase__item:focus .showCase__child {
+.price-list-item:hover .price-list__child,
+.price-list-item:focus .price-list__child {
   /* top: 0;
   left: 0; */
   transition: 0.5s linear;
@@ -65,7 +27,7 @@
   transform: scale(1.1);
 }
 
-.showCase__description {
+.price-list-item__description {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -74,18 +36,18 @@
   z-index: 1;
 }
 
-.showCase__link {
+.price-list-item__link {
   position: relative;
 }
 
-.showCase__text {
+.price-list-item__text {
   font-size: 18px;
   line-height: 1.3;
   margin: 0;
 }
 
 
-.showCase__child {
+.price-list-item__child {
   box-sizing: border-box;
   background-repeat: no-repeat;
   background-position: center;
@@ -102,15 +64,4 @@
   position: absolute;
   top: 0;
   left: 0;
-}
-.showCase__lease {
-  background-image: url('../../images/lease-background.jpg');
-}
-
-.showCase__repair {
-  background-image: url('../../images/repair-background.jpg');
-}
-
-.showCase__transport-support {
-  background-image: url('../../images/cars.jpg');
 }

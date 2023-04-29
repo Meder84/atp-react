@@ -9,3 +9,7 @@
   justify-content: center;
   align-items: center;
 }
+
+.main .wrapper {
+  padding-top: 120px;
+}

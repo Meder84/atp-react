@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import CustomLink from "../NavLink/CustomLink";
+import CustomLink from "../CustomLink/CustomLink";
 import Navigation from "../Navigation/Navigation";
 import NavTab from "../NavTab/NavTab";
 import "./Header.css";

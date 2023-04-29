@@ -1,45 +1,35 @@
-import React from "react";
 import Header from "../Header/Header";
-import Hero from "../Hero/Hero";
-import ShowCase from "../ShowCase/ShowCase";
+import Gallery from "../Gallery/Gallery";
+import Footer from "../Footer/Footer";
+import { Route } from "react-router-dom/cjs/react-router-dom.min";
 import About from "../About/About";
 import Counts from "../Counts/Counts";
-import Services from "../Services/Services";
-import Gallery from "../Gallery/Gallery";
-import Card from "../Cards/Cards";
-import Carousel from "../Carousel/Carousel";
-import Team from "../Team/Team";
-import Footer from "../Footer/Footer";
 import "./Main.css";
-import FooterCopyright from "../FooterCopyright/FooterCoptright";
-import { Route } from "react-router-dom/cjs/react-router-dom.min";
+import PriceList from "../PriceList/PriceList/PriceList";
 
-function Main({ loggedIn }) {
+function Main() {
+
   return (
-    <main className="main">
-      <Header />
-      <Hero />
-      <ShowCase />
-      <About />
-      <Counts />
-      <Services />
-      <Route path='/gallery'>
-        <Gallery />
+    <section className="main">
+      <Route path="/price-list">
+        <Header headerCustom="app__header" />
+        <PriceList />
+        <Footer />
       </Route>
-      <Carousel />
-      <Team />
-      <Footer />
-      <FooterCopyright />
-      {/* <Promo
-        loggedIn={loggedIn}
-      />
-      <AboutProject />
-      <Techs />
-      <AboutMe />
-      <Portfolio />
-      <Footer /> */}
-    </main>
+      <Route path="/gallery">
+        <Header headerCustom="app__header" />
+        <Gallery />
+        <Footer />
+      </Route>
+      <Route path="/about">
+        <Header headerCustom="app__header" />
+        <About />
+        <Counts />
+        <Footer />
+      </Route>
+    </section>
   );
 }
 
 export default Main;
+

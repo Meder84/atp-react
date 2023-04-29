@@ -1,13 +1,16 @@
-.app {
-  font-family: 'Inter', 'Arial', sans-serif;
+.main-list {
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  height: 100vh;
-  text-align: center;
-  min-width: 320px;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  transition: 0.4s ease-in-out;
+  position: relative;
+  justify-content: center;
+  align-items: center;
 }
 
-.app__header {
+.main-list__header{
   display: flex;
   position: fixed;
   background: linear-gradient(to right, #0B1822, #585C5F);
@@ -24,7 +27,3 @@
   top: 0;
   z-index: 2;
 }
-
-/* .app .wrapper {
-  padding-top: 100px
-} */
