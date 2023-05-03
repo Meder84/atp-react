@@ -9,9 +9,10 @@ import Armored from "../PriceList/Armored/Armored";
 import Representative from "../PriceList/Representative/Representative";
 import Passengers from "../PriceList/Passengers/Passengers";
 import Minibuses from "../PriceList/MiniBuses/MiniBuses";
-import "./Main.css";
 import Buses from "../PriceList/Buses/Buses";
 import Tracks from "../PriceList/Tracks/Tracks";
+import Repair from "../Repair/Repair/Repair";
+import "./Main.css";
 
 function Main() {
 
@@ -20,6 +21,11 @@ function Main() {
       <Route path="/price-list">
         <Header headerCustom="app__header" />
         <PriceList />
+        <Footer />
+      </Route>
+      <Route path="/repair">
+        <Header headerCustom="app__header" />
+        <Repair />
         <Footer />
       </Route>
       <Route path="/armored">

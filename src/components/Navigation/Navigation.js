@@ -61,7 +61,7 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
         </li>
         <li className='navigation__link'>
           <CustomLink 
-            to = '/#'
+            to = '/repair'
             custumNavigationLink='navigation__content'
             text='Ремонт'
           />
