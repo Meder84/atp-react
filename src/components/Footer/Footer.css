@@ -11,7 +11,7 @@
 
 .footer .wrapper {
   color: #adabab;
-  padding-bottom: 30px;
+  padding: 60px 40px 30px !important;
 }
 
 .footer__header {

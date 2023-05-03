@@ -9,7 +9,7 @@ function ShowCase() {
       <main className="showCase__wrapper wrapper">
         <h2 className="showCase__title title general-title">Чем мы занимаемся?</h2>
         <div className="showCase__items">
-          <Link to="/" className="showCase__item">
+          <Link to="/price-list" className="showCase__item">
             <div className="showCase__description">
               <h3 className="showCase__subTitle">Аренда авто</h3>
               <p className="showCase__text">Предоставление разного вида и класса авто для аренды</p>

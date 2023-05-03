@@ -18,7 +18,7 @@
 .showCase__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(300px, max-content);
+  grid-auto-rows: minmax(250px, auto);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   position: relative;
@@ -68,7 +68,7 @@
 .showCase__description {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding: 15px;
   z-index: 1;

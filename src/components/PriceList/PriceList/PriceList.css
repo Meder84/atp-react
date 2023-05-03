@@ -18,7 +18,7 @@
 .price-list__items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: minmax(300px, max-content);
+  grid-auto-rows: minmax(250px, auto);
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   position: relative;
@@ -36,14 +36,38 @@
   z-index: 1;
 }
 
-.price-list-item__lease {
+.price-list__download-container {
+  width: fit-content;
+  padding: 0 50px;
+  background: red;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+.price-list__download {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 3;
+  color: #fff;
+}
+
+.price-list__armored {
   background-image: url('../../../images/lease-background.jpg');
 }
 
-.price-list-item__repair {
-  background-image: url('../../../images/repair-background.jpg');
+.price-list__representative {
+  background-image: url('../../../images/garage/cadilac.jpg');
 }
 
-.price-list-item__transport-support {
-  background-image: url('../../../images/cars.jpg');
+.price-list__passengers {
+  background-image: url('../../../images/garage/focus.jpg');
+}
+.price-list__miniBuses {
+  background-image: url('../../../images/garage/miniBuses.jpg');
+}
+.price-list__buses {
+  background-image: url('../../../images/garage/buses.jpg');
+}
+.price-list__tracks {
+  background-image: url('../../../images/garage/miniBuses1.jpg');
 }

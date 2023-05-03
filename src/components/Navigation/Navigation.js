@@ -54,7 +54,7 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
         </li>
         <li className='navigation__link'>
           <CustomLink 
-            to = '/#'
+            to = '/price-list'
             custumNavigationLink='navigation__content'
             text='Аренда'
           />

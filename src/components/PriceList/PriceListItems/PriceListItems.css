@@ -15,8 +15,8 @@
   transition: 0.4s linear;
 }
 
-.price-list-item:hover .price-list__child,
-.price-list-item:focus .price-list__child {
+.price-list-item:hover .price-list-item__child,
+.price-list-item:focus .price-list-item__child {
   /* top: 0;
   left: 0; */
   transition: 0.5s linear;
