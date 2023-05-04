@@ -15,10 +15,10 @@ function Hero () {
             при Управлении делами Президента Кыргызской Республики
           </h2>
           <div className="hero__links-container">
-            <Link className='hero__link opacity'>
+            <Link to='/about' className='hero__link opacity'>
               Подробнее {'>>>'}
             </Link>
-            <Link className='hero__link opacity'>
+            <Link to='/about' className='hero__link opacity'>
               Подробнее {'>>>'}
             </Link>
           </div>

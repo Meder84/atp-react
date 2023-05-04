@@ -5,10 +5,18 @@
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   position: relative;
-  margin: 40px 0 0;
+  margin: 10px 0 0;
+  padding: 0;
 }
 
 .ul li{
   list-style: none;
 }
 
+.ul li:first-child{
+  font-weight: 900;
+}
+
+.ul:first-child{
+  font-weight: 900;
+}
