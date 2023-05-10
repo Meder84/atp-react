@@ -7,9 +7,9 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 1280px;
   margin: 0;
   width: 100%;
+  max-width: 1280px;
   height: 74px;
   padding: 0 40px;
   top: 0;
@@ -25,9 +25,9 @@
   justify-content: space-between;
   align-items: center;
   box-sizing: border-box;
-  max-width: 1280px;
   margin: 0;
   width: 100%;
+  max-width: 1280px;
   height: 74px;
   padding: 0 40px;
   top: 0;
@@ -36,7 +36,7 @@
 
 .header__logo {
   display: block;
-  background-image: url("../../images/logo1_1.png");
+  background-image: url("../../images/logo.png");
   text-decoration: none;
   box-sizing: border-box;
   width: 38px;

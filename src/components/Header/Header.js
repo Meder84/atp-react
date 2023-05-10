@@ -8,9 +8,9 @@ import "./Header.css";
 function Header(props) {
   const [scroll, setScroll] = useState(0);
 
-  const handleScroll = () =>  {
+  const handleScroll = () => {
     setScroll(window.scrollY);
-  }
+  };
 
   //  const handleUpButton = () => {
   //   window.scrollTo(0, 0);
@@ -21,12 +21,10 @@ function Header(props) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-
   return (
-    <header className={scroll > 75 ? 'header__background' : `header ${props.headerCustom}`}>
+    <header className={scroll > 75 ? "header__background" : `header ${props.headerCustom}`}>
       <Link to="/" className="logo header__logo opacity"></Link>
       <Navigation />
-
       <div className={`header__links ${props.headerCustomLinks}`}>
         <NavTab />
         {props.children}

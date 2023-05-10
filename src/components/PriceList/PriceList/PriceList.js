@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PriceListItem from "../PriceListItems/PriceListItems";
-import rent from '../../../presentation/rent.pdf'
+import rent from "../../../presentation/rent.pdf";
 import "./PriceList.css";
 
 function PriceList() {
@@ -33,6 +33,12 @@ function PriceList() {
   return (
     <section className="price-list">
       <main className="price-list__wrapper wrapper">
+        <div className="home-container">
+          <Link to="/" className="text">
+            Главная
+          </Link>
+          <p className="text">/ О нас</p>
+        </div>
         <h2 className="price-list__title title general-title">
           Прейскурант цен на транспортные автоуслуги
         </h2>
@@ -86,11 +92,7 @@ function PriceList() {
           />
         </div>
         <div className="price-list__download-container opacity">
-          <a
-            href={rent}
-            download={rent}
-            className="price-list__download"
-          >
+          <a href={rent} download={rent} className="price-list__download">
             Скачать прейскурант
           </a>
         </div>
