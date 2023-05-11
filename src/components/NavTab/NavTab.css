@@ -42,7 +42,7 @@
   margin-right: 0;
 }
 
-.nav-tab__lang {
+/* .nav-tab__lang {
   display: block;
   position: relative;
   text-decoration: none;
@@ -54,7 +54,7 @@
   text-align: center;
   color: #fff;
   font-size: 11px;
-}
+} */
 
 @media screen and (max-width: 550px) {
   .nav-tab {

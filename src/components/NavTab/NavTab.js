@@ -24,9 +24,9 @@ const NavTab = () => (
     >
       Войти
     </Link>
-    <a className="nav-tab__lang opacity">
+    {/* <a className="nav-tab__lang opacity">
       <span className="nav-tab__lang-text">KG</span>
-    </a>
+    </a> */}
   </nav>
 );
 

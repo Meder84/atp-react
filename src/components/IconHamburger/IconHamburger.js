@@ -4,12 +4,17 @@ import './IconHamburger.css';
 
 function IconHamburger(props) {
   return (
-    <img
-     className={`iconHamburger opacity ${props.customIconHamburger}`}
-     src={iconHamburger}
-     alt='Иконка гамбургер меню'
-     onClick={props.onClick}
-    />
+    <div className={`icon-hamburger opacity ${props.customIconHamburger}`}>
+      <div className="icon-hamburger__item"></div>
+      <div className="icon-hamburger__item"></div>
+      <div className="icon-hamburger__item"></div>
+    </div>
+    // <img
+    //  className={`iconHamburger opacity ${props.customIconHamburger}`}
+    //  src={iconHamburger}
+    //  alt='Иконка гамбургер меню'
+    //  onClick={props.onClick}
+    // />
   )
 }
 

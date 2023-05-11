@@ -3,7 +3,7 @@ import "./CustomLink.css";
 import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 // import { NavLink } from "react-router-dom/cjs/react-router-dom.min";
 
-function CustomLink({ to, custumNavigationLink, text }) {
+function CustomLink({ to, customNavigationLink, text }) {
   return (
     <NavLink
       to={to}
@@ -11,7 +11,7 @@ function CustomLink({ to, custumNavigationLink, text }) {
       background-hover
       customLink
       opacity
-      ${custumNavigationLink}
+      ${customNavigationLink}
     `}
     >
       {text}
