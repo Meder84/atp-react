@@ -70,3 +70,15 @@
   margin: 0;
   padding: 15px 0;
 }
+
+@media screen and (max-width: 768px) {
+  .services__list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 425px) {  
+  .services__item {
+    display: block;
+  }
+}

@@ -2,8 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavTab.css";
 
-const NavTab = () => (
-  <nav className="nav-tab">
+const NavTab = ({customNavTab}) => (
+  <nav className={`nav-tab ${customNavTab}`}>
     <Link
       to="/signup"
       className="

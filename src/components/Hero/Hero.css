@@ -120,3 +120,18 @@
     text-align: center;
   }
 }
+
+@media screen and (max-width: 425px) {  
+  .hero__links-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero__link:nth-child(n) {
+    margin: 0 0 15px;
+  }
+
+  .hero__link:last-child{
+    margin: 0;
+  }
+}

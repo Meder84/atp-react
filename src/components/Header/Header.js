@@ -29,7 +29,9 @@ function Header(props) {
         customNavigation='header__navigation'
       />
       <div className={`header__links ${props.headerCustomLinks}`}>
-        <NavTab />
+        <NavTab 
+          customNavTab='header__navtab'
+        />
         {/* {props.children} */}
         <a className="header__lang opacity">KG</a>
         <IconHamburger

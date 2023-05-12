@@ -49,7 +49,7 @@
   text-decoration: none;
   position: relative;
   transition: 0.3s;
-  font-size: 20px;
+  font-size: 1.2em;
   font-weight: 500;
   color: white;
   padding: 2px;
@@ -79,9 +79,6 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
-
-}
 @media screen and (max-width: 768px) {
   .navigation {
     width: fit-content;

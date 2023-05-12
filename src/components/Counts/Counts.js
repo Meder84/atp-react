@@ -8,9 +8,9 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 // import CountUp from 'react-countup';
 import "./Counts.css";
 
-function Counts() {
+function Counts({customCounts}) {
   return (
-    <section className="counts">
+    <section className={`counts ${customCounts}`}>
       <main className="counts__wrapper wrapper">
         <ul className="counts__list">
           <li className="counts__item">
