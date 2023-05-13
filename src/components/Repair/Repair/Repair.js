@@ -1,15 +1,19 @@
 import React from "react";
 import Ul from "../Ul/Ul";
+import LinkToMain from "../../LinkToMain/LinkToMain";
 import "./Repair.css";
 
 function Repair() {
   return (
     <section className="repair">
-      <main className="wrapper">
-        <h2 className="repair__title title general-title">
+      <main className="repair__wrapper wrapper">
+        <div className="container-link">
+          <LinkToMain text="Ремонт" />
+        </div>
+        <h2 className="title title general-title">
           Прейскурант цен на платные услуги ремонтных работ 
         </h2>
-        <h4 className="repair__subtitle subtitle">
+        <h4 className="subtitle">
           Государственного Учреждения "Автотранспортное предприятие" при
           Управлении делами Президента Кыргызской Республики
         </h4>

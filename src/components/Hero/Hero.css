@@ -70,7 +70,7 @@
 .hero__links-container {
   display: flex;
   width: 100%;
-  border-top: solid 1px #20a098;
+  border-top: solid 1px red;
   position: relative;
   margin-top: 33px;
   padding-top: 38px;

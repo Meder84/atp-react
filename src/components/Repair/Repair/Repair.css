@@ -5,13 +5,13 @@
   position: relative;
 }
 
-.repair__title {
-
+.repair__wrapper .title {
+  color: #20a098;
 }
 
-.repair__subtitle {
-
-}
+/* .wrapper .subtitle {
+  color: #20a098
+} */
 
 .repair__list {
   display: flex;

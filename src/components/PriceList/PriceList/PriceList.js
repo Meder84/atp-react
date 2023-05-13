@@ -3,6 +3,7 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import PriceListItem from "../PriceListItems/PriceListItems";
 import rent from "../../../presentation/rent.pdf";
 import "./PriceList.css";
+import LinkToMain from "../../LinkToMain/LinkToMain";
 
 function PriceList() {
   const armored = "Бронированные";
@@ -33,16 +34,13 @@ function PriceList() {
   return (
     <section className="price-list">
       <main className="price-list__wrapper wrapper">
-        <div className="home-container">
-          <Link to="/" className="text">
-            Главная
-          </Link>
-          <p className="text">/ О нас</p>
+        <div className="container-link">
+          <LinkToMain text="Аренда" />
         </div>
-        <h2 className="price-list__title title general-title">
+        <h2 className="title general-title">
           Прейскурант цен на транспортные автоуслуги
         </h2>
-        <h4 className="price-list__subtitle subtitle">
+        <h4 className="subtitle">
           Государственного Учреждения "Автотранспортное предприятие" при
           Управлении делами Президента Кыргызской Республики
         </h4>

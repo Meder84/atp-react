@@ -18,9 +18,9 @@ function Hero () {
             <Link to='/about' className='hero__link opacity'>
               Подробнее {'>>>'}
             </Link>
-            <Link to='/about' className='hero__link opacity'>
+            {/* <Link to='/about' className='hero__link opacity'>
               Подробнее {'>>>'}
-            </Link>
+            </Link> */}
           </div>
         </div>
       </main>

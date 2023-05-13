@@ -12,10 +12,11 @@ import Minibuses from "../PriceList/MiniBuses/MiniBuses";
 import Buses from "../PriceList/Buses/Buses";
 import Tracks from "../PriceList/Tracks/Tracks";
 import Repair from "../Repair/Repair/Repair";
+import Register from "../Register/Register";
+import Login from "../Login/Login";
 import "./Main.css";
 
 function Main() {
-
   return (
     <section className="main">
       <Route path="/price-list">
@@ -69,9 +70,18 @@ function Main() {
         <Counts />
         <Footer />
       </Route>
+      <Route path="/signup">
+        <Register
+          // handleRegister={handleRegister}
+          // message={message}
+          // resetMessage={resetMessage}
+        />
+      </Route>
+      <Route path='/signin'>
+        <Login />
+      </Route>
     </section>
   );
 }
 
 export default Main;
-

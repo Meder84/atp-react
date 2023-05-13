@@ -77,7 +77,7 @@ function Navigation({ customNavigation }) {
           <CustomLink
             to="/#"
             customNavigationLink="navigation__content"
-            text="Контакты"
+            text="Вакансии "
           />
         </li>
       </ul>

@@ -18,6 +18,7 @@ import buses from '../../images/garage/buses.jpg';
 import track from '../../images/hard1.png';
 import miniBuses2 from '../../images/garage/miniBuses.jpg';
 import ItemGallery from '../ItemGallery/ItemGallery';
+import LinkToMain from '../LinkToMain/LinkToMain';
 import './Gallery.css';
 
 function Gallery() {
@@ -29,6 +30,9 @@ function Gallery() {
   return(
     <section className="gallery">
       <main className='gallery__wrapper wrapper'>
+        <div className="container-link">
+          <LinkToMain text="Галерея" />
+        </div>
         <h2 className="gallery__title general-title title">Галерея</h2>
         <h4 className="gallery__subtitle subtitle">В нашем арсенале имеется большое количество различных машин: < br/> от легковых до грузовых</h4>
         <ul className="gallery__list">
