@@ -10,10 +10,10 @@ function Repair() {
         <div className="container-link">
           <LinkToMain text="Ремонт" />
         </div>
-        <h2 className="title title general-title">
+        <h2 className="repair__title title general-title">
           Прейскурант цен на платные услуги ремонтных работ 
         </h2>
-        <h4 className="subtitle">
+        <h4 className="repair__subtitle subtitle">
           Государственного Учреждения "Автотранспортное предприятие" при
           Управлении делами Президента Кыргызской Республики
         </h4>

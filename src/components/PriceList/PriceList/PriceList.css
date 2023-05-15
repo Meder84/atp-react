@@ -9,7 +9,7 @@
   position: relative;
 }
 
-.price-list__wrapper .title, .subtitle {
+.price-list .price-list__title, .price-list__subtitle {
   color: #20a098;
 }
 

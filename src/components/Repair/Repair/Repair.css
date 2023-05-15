@@ -5,13 +5,9 @@
   position: relative;
 }
 
-.repair__wrapper .title {
+.repair__title, .repair__subtitle {
   color: #20a098;
 }
-
-/* .wrapper .subtitle {
-  color: #20a098
-} */
 
 .repair__list {
   display: flex;

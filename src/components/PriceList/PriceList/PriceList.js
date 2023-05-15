@@ -37,10 +37,10 @@ function PriceList() {
         <div className="container-link">
           <LinkToMain text="Аренда" />
         </div>
-        <h2 className="title general-title">
+        <h2 className="price-list__title title general-title">
           Прейскурант цен на транспортные автоуслуги
         </h2>
-        <h4 className="subtitle">
+        <h4 className="price-list__subtitle subtitle">
           Государственного Учреждения "Автотранспортное предприятие" при
           Управлении делами Президента Кыргызской Республики
         </h4>

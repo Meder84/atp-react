@@ -75,7 +75,7 @@ function Navigation({ customNavigation }) {
         </li>
         <li className="navigation__link">
           <CustomLink
-            to="/#"
+            to="/vacancies"
             customNavigationLink="navigation__content"
             text="Вакансии "
           />
