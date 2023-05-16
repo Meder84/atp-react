@@ -79,15 +79,14 @@
 
 .about__download-container {
   width: fit-content;
-  padding: 0 50px;
+  padding: 7px 50px;
   background: #20a098;
   border-radius: 50px;
 }
 
 .about__download {
   text-decoration: none;
-  font-size: 16px;
-  line-height: 3;
+  font-size: 1em;
   color: #fff;
 }
 
