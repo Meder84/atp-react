@@ -6,7 +6,7 @@
 }
 
 .counts .wrapper {
-  
+  padding-top: 0 !important;
 }
 
 .counts__list {

@@ -8,4 +8,5 @@
   padding: 60px 40px 60px;
   box-sizing: border-box;
   position: relative;
+  transition: 0.4s ease-in-out;
 }

@@ -9,6 +9,10 @@ function Vacancies() {
   return (
     <section className="vacancies">
       <main className="vacancies__wrapper wrapper">
+        <div className="vacancies__wrapper-contacts">
+          <p className="text">отдел кадров</p>
+          <p className="text">тел: +996(312)43-47-01</p>
+        </div>
         <div className="container-link">
           <LinkToMain text="Вакансии" />
         </div>
@@ -19,7 +23,7 @@ function Vacancies() {
           развивались вместе с нами.
         </h4>
         <div className="vacancies__description">
-          <p className="vacancies__description-text text">
+          <p className="vacancies__descrsiption-text">
             В Государственном учреждении "Автотранспортное предприятие" при
             Управлении делами Президента Кыргызской Республики, вас ждут
             комфортная рабочая атмосфера и интересные амбициозные задачи.
@@ -34,6 +38,7 @@ function Vacancies() {
             Станьте частью команды единомышленников.
           </p>
           <ul className="vacancies__description-list">
+            <h3 className="vacancies__description-list__title">Актуальные вакансии</h3>
             <li className="vacancies__description-list__item">
               <Link
                 to="economist"

@@ -10,6 +10,11 @@
   transition: 0.4s ease-in-out;
 }
 
+.nav-tab__child:hover {
+  color: #20a098;
+  cursor: pointer;
+}
+
 .nav-tab__signup {
   font-style: normal;
   font-weight: 500;

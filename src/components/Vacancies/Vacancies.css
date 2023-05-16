@@ -14,6 +14,16 @@
   align-items: center;
   box-sizing: border-box;
   transition: 0.4s ease-in-out;
+  position: relative !important;
+}
+
+.vacancies__wrapper-contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  position: absolute;
+  color: rgba(0, 0, 0, 0.5);
+  right: 40px;
 }
 
 .vacancies__title {
@@ -31,6 +41,7 @@
   align-items: start;
   justify-content: start;
   padding: 20px 0;
+  text-align: start;
 }
 
 .vacancies__description-text {
@@ -47,6 +58,11 @@
   width: 50%;
   list-style: none;
   transition: 0.4s ease-in-out;
+}
+
+.vacancies__description-list__title {
+  text-align: start;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .vacancies__description-list__item {

@@ -16,6 +16,7 @@ import Register from "../Register/Register";
 import Login from "../Login/Login";
 import Vacancies from "../Vacancies/Vacancies";
 import FooterCopyright from "../FooterCopyright/FooterCoptright";
+import Contacts from "../Сontacts/Contacts";
 import "./Main.css";
 
 function Main() {
@@ -85,6 +86,12 @@ function Main() {
       <Route path='/vacancies'>
         <Header headerCustom="app__header" />
         <Vacancies />
+        <Footer />
+        <FooterCopyright />
+      </Route>
+      <Route path='/contacts'>
+        <Header headerCustom="app__header" />
+        <Contacts />
         <Footer />
         <FooterCopyright />
       </Route>

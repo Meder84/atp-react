@@ -45,12 +45,20 @@ function Navigation({ customNavigation }) {
             text="Главная"
           />
         </li>
-        <li className="navigation__link">
+        <li className="navigation__link navigation__link__about-popup__hide">
           <CustomLink
             to="/about"
             customNavigationLink="navigation__content"
             text="О нас"
           />
+          <div className="navigation__link__about-popup">
+            <Link to="/contacts" className="navigation__link__about-popup__link">
+              Контакты
+            </Link>
+            <Link to="/about" className="navigation__link__about-popup__link">
+              О нас
+            </Link>
+          </div>
         </li>
         <li className="navigation__link">
           <CustomLink
