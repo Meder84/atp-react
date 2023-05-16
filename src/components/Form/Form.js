@@ -11,7 +11,7 @@ function Form ({
       name={name}
       onSubmit={onSubmit}
     >
-      <h2 className={`form__title ${customFormTitle}`}>
+      <h2 className={`form__title title ${customFormTitle}`}>
         {title}
       </h2>
       <div className={`form__main ${customFormMain}`}>

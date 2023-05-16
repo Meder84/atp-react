@@ -5,12 +5,8 @@
   position: relative;
 }
 
-.repair__title {
-
-}
-
-.repair__subtitle {
-
+.repair__title, .repair__subtitle {
+  color: #20a098;
 }
 
 .repair__list {

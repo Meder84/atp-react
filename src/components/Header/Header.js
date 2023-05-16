@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import CustomLink from "../CustomLink/CustomLink";
 import Navigation from "../Navigation/Navigation";
 import NavTab from "../NavTab/NavTab";
+import IconHamburger from "../IconHamburger/IconHamburger";
 import "./Header.css";
 
 function Header(props) {
@@ -24,10 +25,19 @@ function Header(props) {
   return (
     <header className={scroll > 75 ? "header__background" : `header ${props.headerCustom}`}>
       <Link to="/" className="logo header__logo opacity"></Link>
-      <Navigation />
+      <Navigation
+        customNavigation='header__navigation'
+      />
       <div className={`header__links ${props.headerCustomLinks}`}>
-        <NavTab />
-        {props.children}
+        <NavTab 
+          customNavTab='header__navtab'
+        />
+        {/* {props.children} */}
+        <a className="header__lang opacity">KG</a>
+        <IconHamburger
+          customIconHamburger='header__icon-hamburger'
+          // onClick={handleClick}
+        />
       </div>
     </header>
   );

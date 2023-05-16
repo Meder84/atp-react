@@ -1,11 +1,15 @@
 import React from "react";
 import Ul from "../Ul/Ul";
+import LinkToMain from "../../LinkToMain/LinkToMain";
 import "./Repair.css";
 
 function Repair() {
   return (
     <section className="repair">
-      <main className="wrapper">
+      <main className="repair__wrapper wrapper">
+        <div className="container-link">
+          <LinkToMain text="Ремонт" />
+        </div>
         <h2 className="repair__title title general-title">
           Прейскурант цен на платные услуги ремонтных работ 
         </h2>

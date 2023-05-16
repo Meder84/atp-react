@@ -6,13 +6,11 @@
 }
 
 .price-list__wrapper {
+  position: relative;
 }
 
-.price-list__title {
+.price-list .price-list__title, .price-list__subtitle {
   color: #20a098;
-}
-
-.price-list__subTitle {
 }
 
 .price-list__items {

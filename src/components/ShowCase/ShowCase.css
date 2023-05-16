@@ -13,6 +13,7 @@
 }
 
 .showCase__subTitle {
+  font-size: 1em;
 }
 
 .showCase__items {
@@ -113,4 +114,11 @@
 
 .showCase__transport-support {
   background-image: url('../../images/cars.jpg');
+}
+
+@media screen and (max-width: 768px) {
+  .showCase__items {
+    grid-template-columns: 1fr;
+    grid-row-gap: 20px;
+  }
 }

@@ -1,97 +1,93 @@
-import React, { useState, useEffect } from 'react';
-import IconHamburger from '../IconHamburger/IconHamburger';
-import PopupMenu from '../PopupMenu/PopupMenu';
-import Account from '../Account/Account';
-import { NavLink } from 'react-router-dom';
-import CustomLink from '../CustomLink/CustomLink';
-import './Navigation.css';
-import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import React, { useState, useEffect } from "react";
+import IconHamburger from "../IconHamburger/IconHamburger";
+import PopupMenu from "../PopupMenu/PopupMenu";
+import Account from "../Account/Account";
+import { NavLink } from "react-router-dom";
+import CustomLink from "../CustomLink/CustomLink";
+import "./Navigation.css";
+import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-function Navigation({custumNavigationMovies, custumNavigationSavedMovies, customSubtitleAccount}) {
+function Navigation({ customNavigation }) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
 
   // useEffect(() => {
   //   const closeByEscape = (e) => {
-  //     if (e.key === 'Escape') {
-  //       setshowPopupMenu (false);
+  //     if (e.key === "Escape") {
+  //       setshowPopupMenu(false);
   //     }
-  //   }
+  //   };
 
-  //   document.addEventListener('keydown', closeByEscape)
-  //   return () => document.removeEventListener('keydown', closeByEscape)
-  // }, [showPopupMenu])
+  //   document.addEventListener("keydown", closeByEscape);
+  //   return () => document.removeEventListener("keydown", closeByEscape);
+  // }, [showPopupMenu]);
 
   // const handleOverlay = (e) => {
   //   if (e.target === e.currentTarget) {
-  //     setshowPopupMenu (false);
+  //     setshowPopupMenu(false);
   //   }
+  // };
+
+  // function handleClick() {
+  //   setshowPopupMenu(true);
   // }
 
-  // function handleClick () {
-  //   setshowPopupMenu (true);
-  // };
-
-  // function handleClose () {
-  //   setshowPopupMenu (false);
-  // };
+  // function handleClose() {
+  //   setshowPopupMenu(false);
+  // }
 
   return (
-    <nav className='navigation'>
-      <ul className='navigation__links'>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/'
-            custumNavigationLink='navigation__content'
-            text='Главная'
+    <nav className={`navigation ${customNavigation}`}>
+      <ul className="navigation__links">
+        <li className="navigation__link">
+          <CustomLink
+            to="/"
+            customNavigationLink="navigation__content"
+            text="Главная"
           />
         </li>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/about'
-            custumNavigationLink='navigation__content'
-            text='О нас'
+        <li className="navigation__link navigation__link__about-popup__hide">
+          <CustomLink
+            to="/about"
+            customNavigationLink="navigation__content"
+            text="О нас"
+          />
+          <div className="navigation__link__about-popup">
+            <Link to="/contacts" className="navigation__link__about-popup__link">
+              Контакты
+            </Link>
+            <Link to="/about" className="navigation__link__about-popup__link">
+              О нас
+            </Link>
+          </div>
+        </li>
+        <li className="navigation__link">
+          <CustomLink
+            to="/price-list"
+            customNavigationLink="navigation__content"
+            text="Аренда"
           />
         </li>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/price-list'
-            custumNavigationLink='navigation__content'
-            text='Аренда'
+        <li className="navigation__link">
+          <CustomLink
+            to="/repair"
+            customNavigationLink="navigation__content"
+            text="Ремонт"
           />
         </li>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/repair'
-            custumNavigationLink='navigation__content'
-            text='Ремонт'
+        <li className="navigation__link">
+          <CustomLink
+            to="/gallery"
+            customNavigationLink="navigation__content"
+            text="Галерея"
           />
         </li>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/gallery'
-            custumNavigationLink='navigation__content'
-            text='Галерея'
+        <li className="navigation__link">
+          <CustomLink
+            to="/vacancies"
+            customNavigationLink="navigation__content"
+            text="Вакансии "
           />
         </li>
-        <li className='navigation__link'>
-          <CustomLink 
-            to = '/#'
-            custumNavigationLink='navigation__content'
-            text='Контакты'
-          />
-        </li>
-        {/* <li className='navigation__header-link'>
-          <NavLink to='/saved-movies'
-            activeClassName="menu__link-active"
-            className={`
-              navigation__header-link-saved-movies
-              opacity
-              ${custumNavigationSavedMovies}
-            `}
-          >
-            Сохранённые фильмы
-          </NavLink>
-        </li> */}
       </ul>
       {/* <NavLink to='/profile'
         activeClassName="menu__link-active"
@@ -99,18 +95,14 @@ function Navigation({custumNavigationMovies, custumNavigationSavedMovies, custom
         <Account
           customSubtitleAccount={customSubtitleAccount}
         />
-      </NavLink>
-      <IconHamburger
-        customIconHamburger='navigation__icon-hamburger'
+      </NavLink> */}
+      {/* <IconHamburger
+        customIconHamburger="navigation__icon-hamburger"
         onClick={handleClick}
       />
-      {
-        showPopupMenu
-        && <PopupMenu
-            handleClose={handleClose}
-            handleOverlay={handleOverlay}
-           />
-      } */}
+      {showPopupMenu && (
+        <PopupMenu handleClose={handleClose} handleOverlay={handleOverlay} />
+      )} */}
     </nav>
   );
 }

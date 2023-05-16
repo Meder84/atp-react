@@ -107,3 +107,9 @@
 .tiktok {
   background-image: url('../../images/iconSocial/iconTikTok.svg');
 }
+
+@media screen and (max-width: 768px) {
+  .team__list {
+    grid-template-columns: 1fr;
+  }
+}

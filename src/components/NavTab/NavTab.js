@@ -2,15 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./NavTab.css";
 
-const NavTab = () => (
-  <nav className="nav-tab">
+const NavTab = ({ customNavTab }) => (
+  <nav className={`nav-tab ${customNavTab}`}>
     <Link
       to="/signup"
       className="
       nav-tab__signup 
       opacity 
-      nav-tab__child
-      background-hover"
+      nav-tab__child"
     >
       Регистрация
     </Link>
@@ -19,14 +18,13 @@ const NavTab = () => (
       className="
         nav-tab__signin 
         opacity 
-        nav-tab__child
-        background-hover"
+        nav-tab__child"
     >
       Войти
     </Link>
-    <a className="nav-tab__lang opacity">
+    {/* <a className="nav-tab__lang opacity">
       <span className="nav-tab__lang-text">KG</span>
-    </a>
+    </a> */}
   </nav>
 );
 

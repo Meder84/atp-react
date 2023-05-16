@@ -6,7 +6,7 @@
 }
 
 .counts .wrapper {
-  
+  padding-top: 0 !important;
 }
 
 .counts__list {
@@ -43,4 +43,10 @@
   font-weight: 400;
   line-height: 1.2;
   margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .counts{
+    display: none;
+  }
 }

@@ -1,13 +1,18 @@
-.iconHamburger {
-  width: 44px;
-  height: 44px;
-  background-size: contain;
+.icon-hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 28px;
+  box-sizing: border-box;
 }
 
-@media screen and (max-width: 400px) {
-  .iconHamburger {
-    width: 40px;
-    height: 43px;
-  }
+.icon-hamburger__item{
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 5px;
 }
+
+ 
+
 
