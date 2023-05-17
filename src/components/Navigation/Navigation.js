@@ -10,30 +10,30 @@ import { Link } from "react-router-dom/cjs/react-router-dom.min";
 function Navigation({ customNavigation, customNavigationLinks }) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
 
-  // useEffect(() => {
-  //   const closeByEscape = (e) => {
-  //     if (e.key === "Escape") {
-  //       setshowPopupMenu(false);
-  //     }
-  //   };
+  useEffect(() => {
+    const closeByEscape = (e) => {
+      if (e.key === "Escape") {
+        setshowPopupMenu(false);
+      }
+    };
 
-  //   document.addEventListener("keydown", closeByEscape);
-  //   return () => document.removeEventListener("keydown", closeByEscape);
-  // }, [showPopupMenu]);
+    document.addEventListener("keydown", closeByEscape);
+    return () => document.removeEventListener("keydown", closeByEscape);
+  }, [showPopupMenu]);
 
-  // const handleOverlay = (e) => {
-  //   if (e.target === e.currentTarget) {
-  //     setshowPopupMenu(false);
-  //   }
-  // };
+  const handleOverlay = (e) => {
+    if (e.target === e.currentTarget) {
+      setshowPopupMenu(false);
+    }
+  };
 
-  // function handleClick() {
-  //   setshowPopupMenu(true);
-  // }
+  function handleClick() {
+    setshowPopupMenu(true);
+  }
 
-  // function handleClose() {
-  //   setshowPopupMenu(false);
-  // }
+  function handleClose() {
+    setshowPopupMenu(false);
+  }
 
   return (
     <nav className={`navigation ${customNavigation}`}>
@@ -89,20 +89,20 @@ function Navigation({ customNavigation, customNavigationLinks }) {
           />
         </li>
       </ul>
-      {/* <NavLink to='/profile'
+      <NavLink to='/profile'
         activeClassName="menu__link-active"
         className='navigation__account-container'>
-        <Account
+        {/* <Account
           customSubtitleAccount={customSubtitleAccount}
-        />
-      </NavLink> */}
-      {/* <IconHamburger
+        /> */}
+      </NavLink>
+     <IconHamburger
         customIconHamburger="navigation__icon-hamburger"
         onClick={handleClick}
       />
       {showPopupMenu && (
         <PopupMenu handleClose={handleClose} handleOverlay={handleOverlay} />
-      )} */}
+      )} 
     </nav>
   );
 }
