@@ -4,7 +4,10 @@ import './IconHamburger.css';
 
 function IconHamburger(props) {
   return (
-    <div className={`icon-hamburger opacity ${props.customIconHamburger}`}>
+    <div 
+      className={`icon-hamburger opacity ${props.customIconHamburger}`}
+      onClick={props.onClick}
+    >
       <div className="icon-hamburger__item"></div>
       <div className="icon-hamburger__item"></div>
       <div className="icon-hamburger__item"></div>

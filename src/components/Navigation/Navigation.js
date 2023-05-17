@@ -7,7 +7,7 @@ import CustomLink from "../CustomLink/CustomLink";
 import "./Navigation.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-function Navigation({ customNavigation }) {
+function Navigation({ customNavigation, customNavigationLinks }) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
 
   // useEffect(() => {
@@ -37,7 +37,7 @@ function Navigation({ customNavigation }) {
 
   return (
     <nav className={`navigation ${customNavigation}`}>
-      <ul className="navigation__links">
+      <ul className={`navigation__links ${customNavigationLinks}`}>
         <li className="navigation__link">
           <CustomLink
             to="/"

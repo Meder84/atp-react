@@ -1,6 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Account from '../Account/Account';
+import Header from '../Header/Header';
+import Navigation from '../Navigation/Navigation';
+import NavTab from '../NavTab/NavTab';
 
 import './PopupMenu.css';
 
@@ -11,42 +14,28 @@ function PopupMenu(props) {
       className="popup-menu"
       onClick={props.handleOverlay}
     >
-      <button
-        className="popup-menu__btn-close opacity"
-        onClick={props.handleClose}
-      />
-      <div className="popup-menu__container">
-        <div className='popup-menu__links' >
-          <NavLink exact to="/"
-            activeClassName="menu__link-active"
-            className="popup-menu__link opacity"
+      <div className='popup-menu__wrapper'>
+        <button
+          className="popup-menu__btn-close opacity"
+          onClick={props.handleClose}
+        />
+        <div className="popup-menu__container">
+          <NavTab />
+          <div className='popup-menu__links' >
+            <Navigation 
+              customNavigationLinks="popup-menu__navigation-links"
+            />
+          </div>
+
+
+          <NavLink to="/profile"
+            activeClassName="popup-menu__link-active"
+            className="popup-menu__link-profile opacity"
           >
-            Главная
+            <Account />
           </NavLink>
 
-          <NavLink to="/movies"
-            activeClassName="menu__link-active"
-            className="popup-menu__link opacity"
-          >
-            Фильмы
-          </NavLink>
-
-          <NavLink to="/saved-movies"
-            activeClassName="menu__link-active"
-            className="popup-menu__link opacity"
-          >
-            Сохранённые фильмы
-          </NavLink>
         </div>
-
-
-        <NavLink to="/profile"
-          activeClassName="popup-menu__link-active"
-          className="popup-menu__link-profile opacity"
-        >
-          <Account />
-        </NavLink>
-
       </div>
     </div>
   );
