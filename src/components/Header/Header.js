@@ -63,7 +63,7 @@ function Header(props) {
         {/* {props.children} */}
         <a className="header__lang opacity">KG</a>
         <IconHamburger
-          customIconHamburger='header__icon-hamburger'
+          customIconHamburger={`header__icon-hamburger ${props.customIconHamburger}`}
           onClick={handleClick}
         />
         {

@@ -19,6 +19,10 @@ function PopupMenu(props) {
           className="popup-menu__btn-close opacity"
           onClick={props.handleClose}
         />
+        <Header 
+          headerCustom='popup-menu__header'
+          customIconHamburger='popup-menu__icon-hamburger'
+        />
         <div className="popup-menu__container">
           <NavTab />
           <div className='popup-menu__links' >
