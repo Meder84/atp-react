@@ -4,12 +4,15 @@ import { BrowserRouter } from 'react-router-dom';
 
 import App from './components/App/App';
 import './index.css';
+import { HashRouter } from 'react-router-dom/cjs/react-router-dom.min';
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
+    {/* <BrowserRouter>
+    </BrowserRouter> */}
   </React.StrictMode>,
   document.getElementById('root')
 );
