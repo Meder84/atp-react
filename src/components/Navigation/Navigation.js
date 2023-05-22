@@ -7,7 +7,7 @@ import CustomLink from "../CustomLink/CustomLink";
 import "./Navigation.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
-function Navigation({ customNavigation, customNavigationLinks }) {
+function Navigation({ customNavigation, customNavigationLinks, customNavLink }) {
   const [showPopupMenu, setshowPopupMenu] = useState(false);
 
   // useEffect(() => {
@@ -41,14 +41,14 @@ function Navigation({ customNavigation, customNavigationLinks }) {
         <li className="navigation__link">
           <CustomLink
             to="/"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="Главная"
           />
         </li>
         <li className="navigation__link navigation__link__about-popup__hide">
           <CustomLink
             to="/about"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="О нас"
           />
           <div className="navigation__link__about-popup">
@@ -63,28 +63,28 @@ function Navigation({ customNavigation, customNavigationLinks }) {
         <li className="navigation__link">
           <CustomLink
             to="/price-list"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="Аренда"
           />
         </li>
         <li className="navigation__link">
           <CustomLink
             to="/repair"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="Ремонт"
           />
         </li>
         <li className="navigation__link">
           <CustomLink
             to="/gallery"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="Галерея"
           />
         </li>
         <li className="navigation__link">
           <CustomLink
             to="/vacancies"
-            customNavigationLink="navigation__content"
+            customNavigationLink={`navigation__content ${customNavLink}`}
             text="Вакансии "
           />
         </li>

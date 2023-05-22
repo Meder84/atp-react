@@ -14,16 +14,20 @@ function PopupMenu(props) {
       className="popup-menu"
       onClick={props.handleOverlay}
     >
-      <div className='popup-menu__wrapper'>
+      <div className="popup-menu__wrapper">
         <button
           className="popup-menu__btn-close opacity"
           onClick={props.handleClose}
         />
+        <Header
+          headerCustom="popup-menu__header"
+        />
         <div className="popup-menu__container">
           <NavTab />
-          <div className='popup-menu__links' >
+          <div className="popup-menu__links" >
             <Navigation 
               customNavigationLinks="popup-menu__navigation-links"
+              customNavLink="popup-menu__navigation-link"
             />
           </div>
 
