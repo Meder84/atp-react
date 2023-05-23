@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/atp-react/static/css/main.417968c1.css",
-    "main.js": "/atp-react/static/js/main.bf883716.js",
+    "main.js": "/atp-react/static/js/main.824dba5d.js",
     "static/media/presentation.pptx": "/atp-react/static/media/presentation.5bf36c180141cbaee098.pptx",
     "static/media/hard1.png": "/atp-react/static/media/hard1.132343ed8f4a95a29f7c.png",
     "static/media/testimonials-5.jpg": "/atp-react/static/media/testimonials-5.0858a770d00d42b5f742.jpg",
@@ -59,10 +59,10 @@
     "static/media/iconHamburger.svg": "/atp-react/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
     "static/media/iconClosePopup.svg": "/atp-react/static/media/iconClosePopup.09da049275af48ed6340.svg",
     "main.417968c1.css.map": "/atp-react/static/css/main.417968c1.css.map",
-    "main.bf883716.js.map": "/atp-react/static/js/main.bf883716.js.map"
+    "main.824dba5d.js.map": "/atp-react/static/js/main.824dba5d.js.map"
   },
   "entrypoints": [
     "static/css/main.417968c1.css",
-    "static/js/main.bf883716.js"
+    "static/js/main.824dba5d.js"
   ]
 }
