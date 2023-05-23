@@ -13,6 +13,10 @@
   transition: 0.4s ease-in-out;
 }
 
+.popup-menu__wrapper {
+  position: relative !important;
+}
+
 .popup-menu__header {
   position: relative !important;
   background: linear-gradient(to right, #0B1822, #585C5F) !important;
@@ -75,7 +79,7 @@
 }
 
 .popup-menu__btn-close {
-  /* position: absolute; */
+  position: absolute;
   background-image: url(../../images/icons/iconClosePopup.svg);
   background-repeat: no-repeat;
   background-size: auto;

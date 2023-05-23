@@ -9,8 +9,9 @@ import PopupMenu from "../PopupMenu/PopupMenu";
 
 function Header(props) {
   const [scroll, setScroll] = useState(0);
-  const [showPopupMenu, setshowPopupMenu] = useState(false);
-  const [showIconHamburger, setShowIconHamburger] = useState(true)
+  const [showPopupMenu, setShowPopupMenu] = useState(false);
+  const [showIconHamburger, setShowIconHamburger] = useState(true);
+  const [showCloseBtn, setShowCloseBtn] = useState(false);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -20,7 +21,7 @@ function Header(props) {
   useEffect(() => {
     const closeByEscape = (e) => {
       if (e.key === 'Escape') {
-        setshowPopupMenu(false);
+        setShowPopupMenu(false);
       }
     }
 
@@ -30,22 +31,35 @@ function Header(props) {
 
   const handleOverlay = (e) => {
     if (e.target === e.currentTarget) {
-      setshowPopupMenu(false);
+      setShowPopupMenu(false);
     }
   }
 
   function handleClick() {
-    setshowPopupMenu(true);
+    // setShowCloseBtn(true);
+    setShowPopupMenu(true);
+    // setShowIconHamburger(false);
   };
 
   function handleClose() {
-    setshowPopupMenu(false);
+    setShowPopupMenu(false);
+    // setShowIconHamburger(true);
+    // setShowCloseBtn(false);
   };
 
   const handleScroll = () => {
     setScroll(window.scrollY);
   };
 
+  function handleHideHumburger() {
+    setShowIconHamburger(false)
+    setShowCloseBtn(true)
+  }
+
+  function handleBtnClose(){
+    setShowIconHamburger(true)
+    setShowCloseBtn(false)
+  }
   //  const handleUpButton = () => {
   //   window.scrollTo(0, 0);
   // };
@@ -57,31 +71,39 @@ function Header(props) {
       <Navigation
         customNavigation='header__navigation'
       />
-      {/* <div className="test" onClick={handleClose} /> */}
-      {/* <button
-        className="header__close-button"
-        onClick={handleClose}
-      >
-        x
-      </button> */}
+
       <nav className={`header__links ${props.headerCustomLinks}`}>
         <NavTab
           customNavTab={`header__navtab ${props.customHeaderNavTab}`}
         />
         {/* {props.children} */}
         <a className="header__lang opacity">KG</a>
-        <IconHamburger
-          customIconHamburger='header__icon-hamburger'
-          onClick={handleClick}
-        />
+        {
+          showCloseBtn &&
+          <button
+            className="header__close-button"
+            onClick={handleBtnClose}
+          >
+            x
+          </button>
+        }
+        {
+          showIconHamburger &&
+          <IconHamburger
+            customIconHamburger='header__icon-hamburger'
+            onClick={handleClick}
+          />
+        }
+
         {
           showPopupMenu
           && <PopupMenu
-            onClick={handleClose}
+            // onClick={handleClose}
             handleOverlay={handleOverlay}
           />
         }
       </nav>
+      {/* <button className="test" onClick={handleClose}></button> */}
     </header>
   );
 }
