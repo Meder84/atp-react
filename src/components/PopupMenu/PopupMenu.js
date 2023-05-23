@@ -16,10 +16,10 @@ function PopupMenu(props) {
     >
       <div className="popup-menu__wrapper">
       <div className="test" onClick={props.onClick} />
-        {/* <button
+        <button
           className="popup-menu__btn-close opacity"
           onClick={props.handleClose}
-        /> */}
+        />
         <Header
           headerCustom="popup-menu__header"
           customHeaderNavTab="popup-menu__navtab"
