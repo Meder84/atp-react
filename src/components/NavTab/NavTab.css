@@ -18,7 +18,7 @@
 .nav-tab__signup {
   font-style: normal;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   color: #fff;
   text-decoration: none;
@@ -34,7 +34,7 @@
   color: #fff;
   text-align: center;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 1em;
   line-height: 16px;
   padding: 2px;
 }

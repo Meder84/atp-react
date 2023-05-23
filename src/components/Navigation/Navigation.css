@@ -31,6 +31,7 @@
   flex-direction: row;
   justify-content: space-between;
   min-width: 212px;
+  width: 100%;
   margin: 0 40px;
   padding: 0;
 }
@@ -39,6 +40,7 @@
   list-style-type: none;
   margin-right: 20px;
   position: relative;
+  width: 100%;
 }
 
 .navigation__link__about-popup {
@@ -92,6 +94,16 @@
 
 .navigation__icon-hamburger {
   display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation__content {
+    padding: 15px 20px;
+  }
+
+  .navigation__links {
+    margin: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

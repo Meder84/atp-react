@@ -10,6 +10,7 @@ import PopupMenu from "../PopupMenu/PopupMenu";
 function Header(props) {
   const [scroll, setScroll] = useState(0);
   const [showPopupMenu, setshowPopupMenu] = useState(false);
+  const [showIconHamburger, setShowIconHamburger] = useState(true)
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -56,9 +57,16 @@ function Header(props) {
       <Navigation
         customNavigation='header__navigation'
       />
+      {/* <div className="test" onClick={handleClose} /> */}
+      {/* <button
+        className="header__close-button"
+        onClick={handleClose}
+      >
+        x
+      </button> */}
       <nav className={`header__links ${props.headerCustomLinks}`}>
         <NavTab
-          customNavTab='header__navtab'
+          customNavTab={`header__navtab ${props.customHeaderNavTab}`}
         />
         {/* {props.children} */}
         <a className="header__lang opacity">KG</a>
@@ -69,7 +77,7 @@ function Header(props) {
         {
           showPopupMenu
           && <PopupMenu
-            handleClose={handleClose}
+            onClick={handleClose}
             handleOverlay={handleOverlay}
           />
         }
