@@ -1,8 +1,12 @@
 .popup-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   min-height: 100vh;
   position: relative;
-  background-color: rgb(0, 0, 0, .3);
+  background: linear-gradient(to right, #0B1822, #585C5F);
   position: fixed;
   top: 0px;
   left: 0px;
@@ -15,6 +19,8 @@
 
 .popup-menu__wrapper {
   position: relative !important;
+  max-width: 1024px;
+  width: 100%;
 }
 
 .popup-menu__header {
@@ -39,6 +45,7 @@
 
 .popup-menu__navtab-container {
   display: flex;
+  justify-content: space-between;
   width: 100%;
   align-items: center;
   padding: 20px;
@@ -79,18 +86,22 @@
 }
 
 .popup-menu__btn-close {
-  position: absolute;
-  background-image: url(../../images/icons/iconClosePopup.svg);
-  background-repeat: no-repeat;
-  background-size: auto;
-  background-position: center;
-  width: 22px;
-  height: 22px;
-  /* top: 22px;
-  right: 22px; */
+  width: 28px;
+  height: 28px;
+  font-size: 1.2em;;
   border: none;
   padding: 0;
-  background-color: #fff;
+  margin: -71px 20px auto;
+  z-index: 2;
+  transition: .4s ease-in-out;
+  background: #20a098;
+  color: #fff;
+}
+
+.popup-menu__btn-close:hover {
+  background: #20a098;
+  color: #fff;
+  transition: .3s ease-in-out;
 }
 
 .popup-menu__link {

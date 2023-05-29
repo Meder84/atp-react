@@ -37,8 +37,8 @@ function Header(props) {
 
   function handleClick() {
     // setShowCloseBtn(true);
-    setShowPopupMenu(true);
     // setShowIconHamburger(false);
+    setShowPopupMenu(true);
   };
 
   function handleClose() {
@@ -51,15 +51,15 @@ function Header(props) {
     setScroll(window.scrollY);
   };
 
-  function handleHideHumburger() {
-    setShowIconHamburger(false)
-    setShowCloseBtn(true)
-  }
+  // function handleHideHumburger() {
+  //   setShowIconHamburger(false)
+  //   setShowCloseBtn(true)
+  // }
 
-  function handleBtnClose(){
-    setShowIconHamburger(true)
-    setShowCloseBtn(false)
-  }
+  // function handleBtnClose(){
+  //   setShowIconHamburger(true)
+  //   setShowCloseBtn(false)
+  // }
   //  const handleUpButton = () => {
   //   window.scrollTo(0, 0);
   // };
@@ -78,28 +78,27 @@ function Header(props) {
         />
         {/* {props.children} */}
         <a className="header__lang opacity">KG</a>
-        {
+        {/* {
           showCloseBtn &&
           <button
             className="header__close-button"
-            onClick={handleBtnClose}
+            onClick={handleClose}
           >
             x
           </button>
+        } */}
+        {
+          showPopupMenu
+          && <PopupMenu
+            onClick={handleClose}
+            handleOverlay={handleOverlay}
+          />
         }
         {
           showIconHamburger &&
           <IconHamburger
             customIconHamburger='header__icon-hamburger'
             onClick={handleClick}
-          />
-        }
-
-        {
-          showPopupMenu
-          && <PopupMenu
-            // onClick={handleClose}
-            handleOverlay={handleOverlay}
           />
         }
       </nav>
