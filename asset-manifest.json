@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/atp-react/static/css/main.dd4554cf.css",
-    "main.js": "/atp-react/static/js/main.4370234f.js",
-    "static/media/presentation.pptx": "/atp-react/static/media/presentation.5bf36c180141cbaee098.pptx",
+    "main.css": "/atp-react/static/css/main.d7a52ffd.css",
+    "main.js": "/atp-react/static/js/main.7b61ef5c.js",
     "static/media/hard1.png": "/atp-react/static/media/hard1.132343ed8f4a95a29f7c.png",
     "static/media/testimonials-5.jpg": "/atp-react/static/media/testimonials-5.0858a770d00d42b5f742.jpg",
     "static/media/testimonials-4.jpg": "/atp-react/static/media/testimonials-4.beed1d501bb1057af46b.jpg",
+    "static/media/presentation.pdf": "/atp-react/static/media/presentation.893542183bf9cd014ac0.pdf",
     "static/media/testimonials-1.png": "/atp-react/static/media/testimonials-1.bde192ae78351afd5916.png",
     "static/media/testimonials-2.png": "/atp-react/static/media/testimonials-2.4753c822895d51cc1f91.png",
     "static/media/rent.pdf": "/atp-react/static/media/rent.e2b9a7a011e49ce536b9.pdf",
@@ -57,12 +57,11 @@
     "static/media/iconAccount.svg": "/atp-react/static/media/iconAccount.705090399674329c2f8a.svg",
     "static/media/iconFacebook.svg": "/atp-react/static/media/iconFacebook.5e1cb4b86ac3f872dadc.svg",
     "static/media/iconHamburger.svg": "/atp-react/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
-    "static/media/iconClosePopup.svg": "/atp-react/static/media/iconClosePopup.09da049275af48ed6340.svg",
-    "main.dd4554cf.css.map": "/atp-react/static/css/main.dd4554cf.css.map",
-    "main.4370234f.js.map": "/atp-react/static/js/main.4370234f.js.map"
+    "main.d7a52ffd.css.map": "/atp-react/static/css/main.d7a52ffd.css.map",
+    "main.7b61ef5c.js.map": "/atp-react/static/js/main.7b61ef5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.dd4554cf.css",
-    "static/js/main.4370234f.js"
+    "static/css/main.d7a52ffd.css",
+    "static/js/main.7b61ef5c.js"
   ]
 }
