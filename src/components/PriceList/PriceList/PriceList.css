@@ -21,6 +21,7 @@
   grid-row-gap: 10px;
   position: relative;
   margin: 40px 0 0;
+  width: 100%;
 }
 
 .price-list__items::before {
@@ -48,6 +49,19 @@
   line-height: 3;
   color: #fff;
 }
+
+@media screen and (max-width: 768px) {
+  .price-list__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .price-list__items {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .price-list__armored {
   background-image: url('../../../images/lease-background.jpg');

@@ -1,7 +1,7 @@
 import React from "react";
 import imageAbout from "../../images/about.jpg";
 import doubleCheck from "../../images/double-check.jpg";
-import presentation from "../../presentation/presentation.pptx";
+import presentation from "../../presentation/presentation.pdf";
 import "./About.css";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 

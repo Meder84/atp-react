@@ -61,3 +61,16 @@
 .contacts__corruption__text {
   text-align: start;
 }
+
+
+@media screen and (max-width: 550px) {
+  .conacts__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .conacts__list {
+    grid-template-columns: 1fr;
+  }
+}
