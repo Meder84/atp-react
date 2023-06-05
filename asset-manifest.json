@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/atp-react/static/css/main.d7a52ffd.css",
-    "main.js": "/atp-react/static/js/main.7b61ef5c.js",
+    "main.css": "/atp-react/static/css/main.e6476c6b.css",
+    "main.js": "/atp-react/static/js/main.b3110a09.js",
     "static/media/hard1.png": "/atp-react/static/media/hard1.132343ed8f4a95a29f7c.png",
     "static/media/testimonials-5.jpg": "/atp-react/static/media/testimonials-5.0858a770d00d42b5f742.jpg",
     "static/media/testimonials-4.jpg": "/atp-react/static/media/testimonials-4.beed1d501bb1057af46b.jpg",
@@ -57,11 +57,11 @@
     "static/media/iconAccount.svg": "/atp-react/static/media/iconAccount.705090399674329c2f8a.svg",
     "static/media/iconFacebook.svg": "/atp-react/static/media/iconFacebook.5e1cb4b86ac3f872dadc.svg",
     "static/media/iconHamburger.svg": "/atp-react/static/media/iconHamburger.da5a7a60ea06a1c03d5224c4a3a0344c.svg",
-    "main.d7a52ffd.css.map": "/atp-react/static/css/main.d7a52ffd.css.map",
-    "main.7b61ef5c.js.map": "/atp-react/static/js/main.7b61ef5c.js.map"
+    "main.e6476c6b.css.map": "/atp-react/static/css/main.e6476c6b.css.map",
+    "main.b3110a09.js.map": "/atp-react/static/js/main.b3110a09.js.map"
   },
   "entrypoints": [
-    "static/css/main.d7a52ffd.css",
-    "static/js/main.7b61ef5c.js"
+    "static/css/main.e6476c6b.css",
+    "static/js/main.b3110a09.js"
   ]
 }
