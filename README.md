@@ -1,7 +1,8 @@
 # ГУ "Автотранспортное предприятие при управлении делами президента Кыргызской республики"
 
 ## Проект: ГУ "АТП УД КР"
-* [Ссылка на проект](https://meder84.github.io/atp-react/)
+* [Ссылка на проект](http://atp.gov.kg/)
+* [Ссылка на проект gitHub](https://meder84.github.io/atp-react/)
 * [Анимированная инфографика сайта](#)
 * [Правила написания кода](https://code.s3.yandex.net/web-developer/landings/design-rules/index.html)
 * [Ссылка на back-end](#)

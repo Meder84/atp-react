@@ -30,7 +30,7 @@ function About() {
               Автотранспортное обеспечение:
             </p>
             <ul className="about__list">
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -38,7 +38,7 @@ function About() {
                 />
                 Президента Кыргызской Республики
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -46,7 +46,7 @@ function About() {
                 />
                 Председателя Кабинета Министров
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -54,7 +54,7 @@ function About() {
                 />
                 Заместителей кабинета министров
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -62,7 +62,7 @@ function About() {
                 />
                 Администрация Президента КР
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -70,7 +70,7 @@ function About() {
                 />
                 Управления Делами Президента
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
@@ -78,7 +78,7 @@ function About() {
                 />
                 Министерств и ведомств КР
               </li>
-              <li class="about__item">
+              <li className="about__item">
                 <img
                   src={doubleCheck}
                   alt="галочка"
